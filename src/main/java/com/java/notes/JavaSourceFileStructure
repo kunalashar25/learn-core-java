@@ -1,0 +1,93 @@
+A Java program can contain any number of classes but at-most one class can be declared as public.
+
+If there's a public class then name of the program and the name of the public class must be matched otherwise we'll get
+compile time error.
+
+Example 1:
+class A
+{
+}
+class B
+{
+}
+class C
+{
+}
+
+Case 1: 
+If there's no public class then we can use any name and there are no restrictions. Program name can be:
+A.java
+B.java
+C.java
+Test.java
+
+Case 2:
+If class B is public then name of the program should be B.java otherwise we'll get compile time error saying
+class B is public, should be declared in a file named B.java
+
+
+Case 3:
+if class B and class C declared as public and name of the program is B.java then we'll get compile time error saying
+class C is public, should be declared in a file named C.java
+
+Example 2:
+class A
+{
+	public static void main(String[] args)
+	{
+		System.out.println("A class main");
+	}
+}
+class B
+{
+	public static void main(String[] args)
+	{
+		System.out.println("B class main");
+	}
+}
+class C
+{
+	public static void main(String[] args)
+	{
+		System.out.println("C class main");
+	}
+}
+class D
+{
+}
+
+Save this file name as Test.java
+
+Now if we compile, javac Test.java, 4 class files will be created i.e. A.class, B.class, C.class and D.class
+
+cmd > java A
+Output: A class main
+
+cmd > java B
+Output: B class main
+
+cmd > java C
+Output: C class main
+
+cmd > java D
+Output: RE: NoSuchMethodError: main
+
+cmd > java Test
+Output: RE: NoClassDefFoundError: Test
+
+Note: Program name is used to compile a program i.e. Test.java and to run a program, class name is used i.e. java A, java B, java C
+and java D
+
+Conclusions:
+1. Whenever we're compiling a java program for every class present in that program a separate .class file will be generated.
+
+2. We can compile a java program (source file) but we can run a java .class file.
+
+3. Whenever we're executing a java class, the corresponding class main() will be executed. If class doesn't contain main() then we'll
+	get runtime exception saying NoSuchMethodError: main.
+	
+4. If corresponding .class file not available then we'll get runtime exception saying NoClassDefFoundError: ClassName
+
+5. It's not recommended to declare multiple classes in a single source file, it's highly recommended to declare only one class 
+	per source file and name of the program will be same as class name. The main advantage of this approach is readability and
+	maintainability of the code will be improved. 

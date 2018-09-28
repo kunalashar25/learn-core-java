@@ -1,0 +1,182 @@
+>> General Standards:
+
+When ever we're writing java code, it is highly recommended to follow coding standards.
+
+When ever we're writing any component, its name should reflect the purpose of that component (functionality).
+
+Main advantage of this approach is readability and maintainability of the code will be improved.
+
+// Incorrect coding standards
+class A
+{
+	public int m1(int x, int y)
+	{
+		return x + y;
+	}
+}
+
+// Correct way to follow
+package com.java.utilities
+
+public class Calculator
+{
+	public static int add(int number1, int number2)
+	{
+		return number1 + number2;
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Classes:
+
+Usually, class names are nouns.
+
+It should starts with Upper case Char and if it contains multiple words, every inner word should start with upper case char.
+
+Examples:
+- String
+- StringBuffer
+- Account
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Interface:
+
+Usually, interface names are Adjectives.
+
+Should start with Upper case char and if it contains multiple words, every inner word should start with Upper case char.
+	
+Example:
+- Runnable
+- Comparable
+- Serializable
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Methods:
+
+Usually, method names are either verbs or verbNoun combination.
+
+Should starts with lower case alphabet symbol and if it contains multiple words then every inner word should start with Upper case char.
+Camel case convention.
+
+Example:
+- print
+- sleep
+- eat
+- start
+- getName
+- setSalary
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Variables:
+
+Usually, variable names are nouns.
+
+Should starts with  lower case alphabet symbol and if it contains multiple words then every inner word should starts with Upper case char.
+Camel case convention.
+
+Example:
+- name
+- age
+- salary
+- mobileNumber
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Constants:
+
+Usually, constant names are nouns.
+
+Should contains only upper case char and if it contains multiple words then these words are separated with underscore symbol.
+
+Usually, we can declare constants with public static final modifiers.
+
+Example:
+- MAX_PRIORITY
+- MIN_PRIORITY
+- MAX_VALUE
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Bean:
+
+A JAVA Bean is a simple java class with private properties and public getter/setter methods.
+
+// Syntax
+public class StudentBean
+{
+	private String name;
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+}
+
+When Class name end with bean is not official convention from SUN microsystems.
+
+// Syntax for setter method:
+
+It should be public method.
+
+Return type should be void.
+
+Method name should be prefixed with set.
+
+It should take some argument i.e. it should not be no argument method.
+
+
+// Syntax for getter method:
+
+It should be public method.
+
+Return type should not be void.
+
+Method name should be prefixed with get.
+
+It should not take any argument.
+
+For boolean properties, getter method name can be prefixed with either get or is but recommended to use is IS.
+
+Example:
+private boolean empty;
+
+public boolean getEmpty()
+{
+	return empty;
+}
+		OR
+		
+public boolean isEmpty()
+{
+	return empty;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+>> For Listeners:
+
+Case 1: To Register a Listener
+Method name should be prefixed with 'add'
+
+Example:
+- public void addMyActionListener (MyActionListener l) 		: Valid
+- public void returnMyActionListener (MyActionListener l) 	: Invalid as started with return instead of add
+- public void addMyActionListener (ActionListener l) 		: Invalid. Incorrect coding standard as it should be MyActionListener in parameter as well. 
+
+Case 2: To UnRegister a Listener
+Method name should be prefixed with 'remove'
+
+Example:
+- public void removeMyActionListener (MyActionListener l) 		: Valid
+- public void unRegisterMyActionListener (MyActionListener l) 	: InValid as started with unRegister
+- public void removeMyActionListener (ActionListener l) 		: InValid
+- public void deleteMyActionListener (MyActionListener l) 		: InValid as started with delete

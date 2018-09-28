@@ -1,0 +1,62 @@
+------------------------------------------------------------------------------------------------------------------------------------------
+											Access Modifiers
+------------------------------------------------------------------------------------------------------------------------------------------
+
+When ever we're writing our own classes, we've to provide some information about our class to the JVM like:
+
+1. Whether this class can be accessible from anywhere or not.
+2. whether child class creation is possible or not.
+3. Whether object creation is possible or not.
+
+We can specify this information by using appropriate modifiers.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+The only applicable modifiers for top level classes are:
+1. public
+2. <default>
+3. final
+4. abstract
+5. strictfp (Strict floating point)
+
+But for inner classes, the applicable modifiers are:
+1. public
+2. <default>
+3. final
+4. abstract
+5. strictfp
+6. private
+7. protected
+8. static
+
+Modifiers that cannot be used with classes are:
+1. synchronized
+2. native
+3. transient
+4. volatile
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+private class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello");
+	}	
+}
+
+>> javac Test.java 
+CE: modifier private not allowed here
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Access Modifiers v/s Access Specifiers
+
+public, private , protected, default are considered as specifiers except these rest are considered as modifiers but this rule is applicable
+only for old languages like C++ but not for Java.
+
+In Java, all are considered as modifiers only, there's nothing called specifiers in Java.
+
+For Example: see above compile time error, it states, modifier private not allowed here.
+
+------------------------------------------------------------------------------------------------------------------------------------------

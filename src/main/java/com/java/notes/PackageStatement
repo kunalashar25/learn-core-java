@@ -1,0 +1,144 @@
+------------------------------------------------------------------------------------------------------------------------------------------
+													Package Statement
+------------------------------------------------------------------------------------------------------------------------------------------
+
+It is an encapsulation mechanism used to group related classes and interfaces into a single unit, which is nothing but package.
+
+Example 1: All classes and interfaces which are required for DB operations are grouped into a single package which is nothing but 
+		java.sql package.
+		
+Example 2: All classes and interfaces which are required for file operations are grouped into a separate package which is nothing but 
+		java.io package.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Advantages of Package:
+
+1. To resolve naming conflicts (i.e. unique identification of components).
+2. It improves modularity of the application.
+3. It improves maintainability of the application.
+4. It provides security for our components.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Packages Naming Convention:
+
+Use internet domain name in reverse order followed by module/sub-module names.
+
+Example: com.icici.loan.housing.Account
+
+- com.icici : client domain name in reverse.
+- loan	: module name
+- housing	: sub-module name
+- Account	: class name
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+package com.java.scjp
+
+public class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello");
+	}
+}
+
+1. When compiled using >> Javac Test.java
+Generated .class file will be placed in current working directory.
+
+CWD
+|---Test.class 
+
+2. When compiled using >> Javac -d . Test.java
+
+Note: -d represents destination to place generated .class files. (.) dot represents current working directory.
+
+Generated .class file will be placed in corresponding package structure.
+
+CWD
+|---com
+	|---java
+		|---scjp	
+			|---Test.class
+
+Case 1:
+If the corresponding package structure is not present then this command will create package structure and then will create .class file.
+
+Case 2:
+As destination, instead of (.)dot we can use any valid directory name and java will create package structure and then will create .class file.
+
+Example: Javac -d F: Test.java
+
+F:
+|---com
+	|---java
+		|---scjp	
+			|---Test.class
+
+Case 3:
+If the specified directory is not present then we'll get compile time error.
+
+Example: Javac -d Z: Test.java
+
+If Z: not present then we'll get compile time error saying, directory not found: Z:
+
+At the time of execution, we have to use fully qualified name.
+>> Java com.java.scjp.Test
+Output: Hello
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Conclusions 1:
+
+package pack1;
+package pack2;
+
+public class A
+{
+
+}
+
+In any java source file, there can be at-most 1 package statement otherwise we'll get compile time error 
+saying: class, interface or enum expected.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Conclusions 2:
+
+import java.util.*;
+package pack1;
+
+public class A
+{
+
+}
+
+In any java program, the first non-commented statement should be package statement (if it's available) otherwise we'll get compile time 
+error saying: class, interface or enum expected.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Conclusions 3:
+
+The following is valid java source file structure:
+
+package statement;							>> At-most one
+import statements;							>> Any number
+class/interface/enum declarations 			>> Any number
+
+Note: Declaration order is important. 
+
+Note: An empty source file is a valid java program. Hence, the following are valid java source files:
+
+1. empty file saved as Test.java
+
+2. Only package statement saved as Test.java
+
+3. Only import statement saved as Test.java
+
+4. Only package and import statement saved as Test.java
+
+5. only class declaration with package or import statement saved as Test.java
+
+------------------------------------------------------------------------------------------------------------------------------------------

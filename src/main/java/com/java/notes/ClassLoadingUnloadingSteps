@@ -1,0 +1,9 @@
+What happens when user writes, java Test?
+1. JVM is started.
+2. JVM creates and starts main thread.
+3. Main thread locates Test.class file. If not found then exception throw, Exception in thread.main() noClassDefFound.
+4. Main thread Load Test.class.
+5. Main thread Execute main() method.
+6. Main thread Unload Test.class.
+7. JVM Terminate main thread.
+8. Shutdown JVM.

@@ -1,0 +1,309 @@
+------------------------------------------------------------------------------------------------------------------------------------------
+						Import Statement
+------------------------------------------------------------------------------------------------------------------------------------------
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		ArrayList l = new ArrayList();
+	}
+}
+
+Error on compiling: 
+Cannot find symbol. 
+symbol: class ArrayList. 
+location: class Test
+
+We can solve this problem by using fully qualified name i.e. java.util.ArrayList l = new java.util.ArrayList();
+
+The problem with usage of fully qualified name every-time is it increases length of code and reduces readability.
+
+We can solve this problem by using import statement.
+
+Whenever we're writing import statement, it is not required to use fully qualified name every-time. We can use short name directly.
+
+Updated Code with Import Statement:
+
+import java.util.ArrayList; 
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		ArrayList l = new ArrayList();
+	}
+}
+
+Hence, import statement acts as typing shortcut.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 1: Types of Import Statements
+
+There are 2 types of import statements:
+1. Explicit class import
+2. Implicit class import
+
+>> Explicit class import example: import java.util.ArralList;
+
+It is highly recommended to use explicit class import because it improves readability of the code.
+
+>> Implicit class import example: import java.util.*;
+
+Not recommended to use because it reduces readability of code.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 2: Which of the following import statements are meaningful?
+
+import java.util.ArrayList;			>> Correct (after class name ; is allowed)
+import java.util.ArrayList.*;			>> Incorrect
+import java.util.*;					>> Correct (after package name .* is allowed)
+import java.util;					>> Incorrect
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 3: Consider the following code 
+
+class MyObject extends java.rmi.UniCastRemoteObject
+{
+
+}
+
+Above code compiles fine even though we're not writing import statement because we used fully qualified name.
+
+Note: Whenever we're using fully qualified name, it's not required to write import statement. Similarly, whenever we're writing 
+		import statement, it's not required to use fully qualified name. 
+		
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 4: 
+
+import java.util.*;
+import java.sql.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		Date d = new Date();
+	}
+}
+
+CE: reference to date is ambiguous. 
+
+Compiler will not understand from where to refer this Date class hence compile time error is thrown. 
+
+Note: Even in the case of List, we may get same ambiguity problem because it is available in both util and awt packages. 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 5: While resolving class names, compiler will always give precedence in the following order:
+
+1. Explicit class import
+2. Classes present in current working directory (default package).
+3. Implicit class import.
+
+import java.util.Date;
+import java.sql.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		Date d = new Date();
+	}
+}
+
+Date class will be loaded from util package in this case.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 6: Whenever we're importing a java package, all classes and interfaces present in that package are available by default but not
+		sub-package classes, if we want to use sub-package class compulsory we should write import statement until sub-package level.
+
+Example:
+
+java
+|---util
+	|---regex
+		|---Pattern	
+
+To use Pattern class in our program, which import statement is required?
+
+1. import java.*;
+2. import java.util.*;
+3. import java.util.regex.*;  >> Correct Answer
+4. No import required
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 7: All classes and interfaces present in the following packages are available by default to every java program. Hence, we're not 
+		required to write import statement.
+
+1. java.lang package.
+2. default package (Current Working Directory).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 8: Import statements is totally compile time related concept. If more number of imports then more will be the compile time but there's
+		no effect on execution time (run time).
+		
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 9: Difference between C language #include and JAVA language import statement:
+
+In C language #include, all input/output header files will be loaded at beginning only (translation time). Hence, it is static include.
+
+In JAVA language import statement, no .class file will be loaded at the beginning. Whenever we're using a particular class then only 
+corresponding .class file will be loaded. This is called dynamic include or load on demand or load on fly.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Note: v1.5 new features
+1. for-each loop
+2. var-args method
+3. Autoboxing and Autounboxing.
+4. Generics
+5. co-varient return types
+6. Queue
+7. enum
+8. Annotations
+9. static import
+
+------------------------------------------------------------------------------------------------------------------------------------------
+						Static Import Statement
+------------------------------------------------------------------------------------------------------------------------------------------
+
+According to SUN, usage of static import reduces length of the code and improves readability but according to world wide programming experts
+usage of static import creates confusion and reduces readability. Hence, if there is no specific requirement then it is not recommended to
+use static import. 
+
+Usually, we can access static members by using class name but whenever we're static import we can access static members directly without
+class name.
+
+Syntax:
+import static java.lang.Math.*;
+
+All static method of Math class will be directly accessible.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 1:
+
+Explain about, System.out.println();
+
+class System
+{
+	static PrintStream out;
+}
+
+- System is a class present in java.lang package.
+- out is a static variable present in System class of PrintStream type.
+- println() is a method present in PrintStream class.
+
+out is a static variable present in System class. Hence, we can access by using class name System but whenever
+we're writing static import, it's not required to use class name and we can access out directly.
+
+Example:
+import static java.lang.System.out;
+
+out.println("Hello");
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 2:
+
+import static java.lang.INTEGER.*;
+import static java.lang.BYTE.*;
+
+public class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println(MAX_VALUE);
+	}
+}
+
+Output:
+CE: Reference to MAX_VALUE is ambiguous.
+
+Note: MAX_VALUE is present in both INTEGER and BYTE class.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 3:
+
+While resolving static members, compiler will always consider the precedence/priority in following order:
+
+1. Current class static members.
+2. Explicit static import.
+3. Implicit static import.
+
+Example:
+
+import static java.lang.INTEGER.MAX_VALUE; // Explicit Import
+import static java.lang.BYTE.*; // Implicit Import
+
+public class Test
+{
+	static int MAX_VALUE = 999;
+
+	public static void main(String[] args)
+	{
+		System.out.println(MAX_VALUE);
+	}
+}
+
+Output: 999 as first priority will be given to current class static members.
+
+Note: 
+1. if we comment 'static int MAX_VALUE = 999;' then output will be 2147483647 which is max value of INTEGER class,
+	as second priority is given to Explicit import. 
+2. if we comment 'static int MAX_VALUE = 999; and import static java.lang.INTEGER.MAX_VALUE;' then output will be 127 
+	which is max value of BYTE class, as third priority is given to Implicit import.
+
+------------------------------------------------------------------------------------------------------------------------------------------ 
+
+Case 4: Refer Image normal_vs_static_import.png
+
+Which of the following import statements are valid?
+1. import java.lang.Math.*;				>> Invalid
+2. import static java.lang.Math.*;			>> Valid
+3. import java.lang.Math.sqrt;				>> Invalid
+4. import static java.lang.Math.sqrt();		>> Invalid
+5. import java.lang.Math.sqrt.*;			>> Invalid
+6. import static java.lang.Math.sqrt; 		>> Valid
+7. import java.lang;					>> Invalid
+8. import static java.lang;				>> Invalid
+9. import java.lang.*;					>> Valid
+10. import static java.lang.*;				>> Invalid
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 5: 
+
+Two packages contains a class/interface with a same name is very rare and hence, ambiguity problem is very rare in 
+normal import but two classes/interfaces contains a variable or method with same name is very common and hence 
+ambiguity problem is also very common in static import. 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 6:
+
+Usage of static import reduces readability and creates confusion and hence if there is no specific requirement then it is not
+recommended to use static import.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Case 7: Difference between normal import and static import?
+
+We can use normal import to import classes and interfaces of a particular package. Whenever we're using normal import
+it is not required to use fully qualified name and we can use short name directly.
+
+We can use static import to import static members of a particular class/interface. Whenever we're writing static import 
+it is not required to use class name to access static members and we can access them directly.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
