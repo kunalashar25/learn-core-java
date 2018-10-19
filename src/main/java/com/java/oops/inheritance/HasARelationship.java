@@ -27,8 +27,15 @@ class Engine
 
 /** Difference between Composition and Aggregation **/
 // 1. Without existing container object, if there is no chance of existing contained objects then container and
-// contained objects are strongly associated and these strong association is nothing but composition.
+// contained objects are strongly associated and this strong association is nothing but composition.
 
 // Example: University consist of several departments, without existing university there is no change of existing
 // department. Hence, university and departments are strongly associated and this strong association is nothing but
 // composition.
+
+// 2. Without existing container object, if there is a chance of existing contained objects then container and contained
+// objects are weakly associated and this weak association is nothing but aggregation.
+
+// Example: Department consist of several professors, without existing department there may be a chance of existing
+// professor objects. Hence, department and professor objects are weakly associated and this weak association is nothing
+// but aggregation.
