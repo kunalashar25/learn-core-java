@@ -86,16 +86,3 @@ abstract class B extends A
 {
 	public abstract void m1();
 }
-
-/** Summary **/
-// 1. In overriding the following modifiers won't keep any restrictions: synchronized, native, strictfp
-
-/** Valid Examples **/
-// parent method: non-final > child method: final
-// parent method: abstract > child method: non-abstract
-// parent method: synchronized > child method: non-synchronized
-// parent method: native > child method: non-native
-// parent method: strictfp > child method: non-strictfp
-
-/** Invalid Examples **/
-// parent method: final > child method: non-final/final
