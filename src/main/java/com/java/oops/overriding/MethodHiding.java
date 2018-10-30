@@ -2,8 +2,14 @@ package com.java.oops.overriding;
 
 public class MethodHiding
 {
-	// All rules of method hiding are exactly same as overriding except the few differences. Refer
-	// MethodHiding_vs_MehtodOverriding.PNG
+	// 1. All rules of method hiding are exactly same as overriding except the few differences.
+	// Refer: MethodHiding_vs_MehtodOverriding.PNG
+
+	// 2. If both parent and child class methods are non-static then it'll become overriding. In this case, output will
+	// be:
+	// parent
+	// child
+	// child
 
 	public static void main(String[] args)
 	{
