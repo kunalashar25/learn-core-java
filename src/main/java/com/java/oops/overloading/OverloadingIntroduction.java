@@ -1,6 +1,6 @@
 package com.java.oops.overloading;
 
-public class Overloading
+public class OverloadingIntroduction
 {
 	// 1. Two methods are said to be overloaded if and only if both methods have same name but different argument types.
 
@@ -30,7 +30,7 @@ public class Overloading
 
 	public static void main(String[] args)
 	{
-		Overloading o = new Overloading();
+		OverloadingIntroduction o = new OverloadingIntroduction();
 		o.m1(); // Output: no-args
 		o.m1(1); // Output: int-args
 		o.m1(1f); // Output: float-args

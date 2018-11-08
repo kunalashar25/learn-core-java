@@ -1,6 +1,6 @@
 package com.java.oops.overriding;
 
-public class Overriding extends Parent
+public class OverridingIntroduction extends Parent
 {
 
 	// 1. Whatever methods parent has by default available to the child through inheritance. If child class not
@@ -20,7 +20,7 @@ public class Overriding extends Parent
 
 	public static void main(String[] args)
 	{
-		Overriding o = new Overriding();
+		OverridingIntroduction o = new OverridingIntroduction();
 		o.method1(); // Output: Method from Child class.
 	}
 
@@ -41,10 +41,10 @@ class Test
 		Parent p = new Parent();
 		p.method1(); // Output: Method from Parent class.
 
-		Overriding child = new Overriding();
+		OverridingIntroduction child = new OverridingIntroduction();
 		child.method1(); // Output: Method from Child class.
 
-		Parent p1 = new Overriding();
+		Parent p1 = new OverridingIntroduction();
 		p1.method1(); // Output: Method from Child class.
 	}
 }
