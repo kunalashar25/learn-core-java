@@ -41,4 +41,15 @@ public class TypeCastingIntroduction
 	// Example 2
 	StringBuffer	sb3	= (String) o;
 	// CE: Incompatible types Found: java.lang.String type Required:java.lang.StringBuffer
+
+	/** Run-time checking on above statement **/
+	// 3. Runtime object type of 'd' must be either same or derived type of 'C' otherwise we'll get runtime exception
+	// saying ClassCastException
+
+	// Example
+	Object			o1	= new String("Hello");
+	StringBuffer	sb4	= (StringBuffer) o1;
+
+	// RE: Exception in thread "main" java.lang.ClassCastException: java.lang.String cannot be cast to
+	// java.lang.StringBuffer
 }
