@@ -46,10 +46,24 @@ public class TypeCastingIntroduction
 	// 3. Runtime object type of 'd' must be either same or derived type of 'C' otherwise we'll get runtime exception
 	// saying ClassCastException
 
-	// Example
+	// Example 1
 	Object			o1	= new String("Hello");
 	StringBuffer	sb4	= (StringBuffer) o1;
 
 	// RE: Exception in thread "main" java.lang.ClassCastException: java.lang.String cannot be cast to
 	// java.lang.StringBuffer
+
+	// Example 2 (Valid Example)
+	Object			o2	= new String("Hello");
+	Object			o3	= (String) o2;
+
+	// Compiler checks:
+	// 1. o2 and (String) has a relation
+	// 2. (String) is a child class of Object
+
+	// Runtime checks:
+	// 3. Runtime object type of o2 is String and is same as its derived type.
+	
+	// Refer TypeCastingExamples.PNG for more examples
+
 }
