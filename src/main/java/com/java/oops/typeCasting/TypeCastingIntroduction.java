@@ -62,7 +62,7 @@ public class TypeCastingIntroduction
 	// 2. (String) is a child class of Object
 
 	// Runtime checks:
-	// 3. Runtime object type of o2 is String and is same as its derived type.
+	// 3. Runtime object type of o2 is String and is same as its derived type or has to be a child.
 	
 	// Refer TypeCastingExamples.PNG for more examples
 
