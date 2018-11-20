@@ -19,4 +19,7 @@ public class StaticBlockIntroduction
 
 	// Note: Within a class we can declare any number of static blocks but all these static blocks will be executed from
 	// top to bottom.
+	
+	// Q1. Without writing main() method is it possible to print some statements in console?
+	// Ans: Yes, by using static block
 }
