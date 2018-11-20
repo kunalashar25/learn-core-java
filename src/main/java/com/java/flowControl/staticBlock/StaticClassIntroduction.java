@@ -11,7 +11,7 @@ package com.java.flowControl.staticBlock;
 // Steps 7 to 12 from image falls under Step 2 from above sequence.
 // Steps 13 to 15 from image falls under Step 3 from above sequence.
 
-public class StaticClass
+public class StaticClassIntroduction
 {
 	static int i = 10;
 
