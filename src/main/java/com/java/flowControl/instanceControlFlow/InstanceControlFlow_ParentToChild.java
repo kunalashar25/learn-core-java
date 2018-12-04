@@ -59,3 +59,24 @@ class Child extends InstanceControlFlow_ParentToChild
 
 	int y = 200;
 }
+
+// Whenever we're creating child class object the following sequence of events will be performed automatically as a part
+// of instance control flow:
+
+// 1. Identification of instance members from Parent to Child.
+// 2. Execution of instance variable assignments and instance blocks only in parent class.
+// 3. Execution of parent constructor.
+// 4. Execution of instance variable assignments and instance blocks in child class.
+// 5. Execution of child constructor.
+
+// Output:
+// 0
+// Parent Instance
+// Parent Constructor
+// 0
+// Child First Instance
+// Child Second Instance
+// Child Constructor
+// Child Main
+
+// Note: Goto Video #62 (1:00:02) and add step wise image under conceptImages package.
