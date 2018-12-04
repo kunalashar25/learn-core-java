@@ -25,7 +25,9 @@ public class InstanceFlowIntroduction
 	public static void main(String[] args)
 	{
 		InstanceFlowIntroduction i = new InstanceFlowIntroduction();
+
 		System.out.println("Main");
+		InstanceFlowIntroduction i2 = new InstanceFlowIntroduction();
 	}
 
 	public void m1()
@@ -46,5 +48,15 @@ public class InstanceFlowIntroduction
 // Second Instance Block
 // Constructor
 // Main
+
+// Note:
+
+// 1. If we comment InstanceFlowIntroduction i = new InstanceFlowIntroduction(); then output is only Main
+
+// 2. static control flow is one time activity which will be performed at the time of class loading but instance
+// control flow is not one time activity and it'll be performed for every object creation.
+
+// 3. Object creation is the most costly operation. If there is no specific requirement then it is not recommended to
+// create object.
 
 // Note: Goto Video #62 (21:55) and add step wise image under conceptImages package.
