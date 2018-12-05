@@ -45,3 +45,5 @@ public class StaticAndInstanceControlFlow
 // First Instance Block
 // Second Instance Block
 // Constructor
+
+// Note: Static control flow is one time activity. Instance control flow will be executed for every object creation.
