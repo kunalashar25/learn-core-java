@@ -31,3 +31,5 @@ public class ConstructorIntroduction
 // Output:
 // Name1 1
 // Name2 2
+
+// Note: The main purpose of constructor is to perform initialization of an object but not to create object.
