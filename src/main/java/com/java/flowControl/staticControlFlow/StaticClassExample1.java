@@ -1,4 +1,4 @@
-package com.java.flowControl.staticBlock;
+package com.java.flowControl.staticControlFlow;
 
 public class StaticClassExample1
 {

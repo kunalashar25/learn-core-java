@@ -1,4 +1,4 @@
-package com.java.flowControl.staticBlock;
+package com.java.flowControl.staticControlFlow;
 
 // Whenever we're executing a java class the following sequence of steps will be executed as a part of static control flow
 // 1. Identification of static members from top to bottom.
