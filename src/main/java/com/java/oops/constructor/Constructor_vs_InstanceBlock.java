@@ -8,4 +8,45 @@ public class Constructor_vs_InstanceBlock
 
 	// 2. Both constructor and instance block have their own different purposes and replacing one concept with another
 	// concept may not work always.
+
+	// 3. Both constructor and instance block will be executed for every object creation but execution will start from
+	// instance block first and followed by constructor.
+
+	// Demo program to print number of objects created for a class:
+
+	static int count = 0;
+
+	{
+		count++;
+	}
+
+	public Constructor_vs_InstanceBlock()
+	{
+		System.out.println("Default Constructor");
+	}
+
+	public Constructor_vs_InstanceBlock(int i)
+	{
+		System.out.println("Integer Constructor");
+	}
+
+	public Constructor_vs_InstanceBlock(double d)
+	{
+		System.out.println("Double Constructor");
+	}
+
+	public static void main(String[] args)
+	{
+		Constructor_vs_InstanceBlock c1 = new Constructor_vs_InstanceBlock();
+		Constructor_vs_InstanceBlock c2 = new Constructor_vs_InstanceBlock(10);
+		Constructor_vs_InstanceBlock c3 = new Constructor_vs_InstanceBlock(10.5);
+
+		System.out.println("Number of objects created: " + count);
+	}
 }
+
+// Output:
+// Default Constructor
+// Integer Constructor
+// Double Constructor
+// Number of objects created: 3
