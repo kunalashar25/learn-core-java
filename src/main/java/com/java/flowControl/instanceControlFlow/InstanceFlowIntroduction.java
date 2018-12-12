@@ -9,6 +9,12 @@ public class InstanceFlowIntroduction
 	// i. Identification of instance members from top to bottom.
 	// ii. Execution of instance variable assignments and instance blocks from top to bottom.
 	// iii. Execution of constructor.
+	
+	// Refer InstanceControlFlowExecutionSequence.png
+	
+	// Steps 3 to 8 from image falls under Step 1 from above sequence.
+	// Steps 9 to 14 from image falls under Step 2 from above sequence.
+	// Step 15 from image falls under Step 3 from above sequence.
 
 	int i = 10;
 
@@ -58,5 +64,3 @@ public class InstanceFlowIntroduction
 
 // 3. Object creation is the most costly operation. If there is no specific requirement then it is not recommended to
 // create object.
-
-// Note: Goto Video #62 (21:55) and add step wise image under conceptImages package.

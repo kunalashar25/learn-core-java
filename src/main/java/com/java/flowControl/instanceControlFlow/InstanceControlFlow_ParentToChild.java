@@ -69,6 +69,14 @@ class Child extends InstanceControlFlow_ParentToChild
 // 4. Execution of instance variable assignments and instance blocks in child class.
 // 5. Execution of child constructor.
 
+// Refer InstanceControlFlowExecutionSequence_ParentToChild.png
+
+// Steps 4 to 14 from image falls under Step 1 from above sequence.
+// Steps 15 to 19 from image falls under Step 2 from above sequence.
+// Step 20 from image falls under Step 3 from above sequence.
+// Steps 21 to 26 from image falls under Step 4 from above sequence.
+// Step 27 from image falls under Step 5 from above sequence.
+
 // Output:
 // 0
 // Parent Instance
@@ -78,5 +86,3 @@ class Child extends InstanceControlFlow_ParentToChild
 // Child Second Instance
 // Child Constructor
 // Child Main
-
-// Note: Goto Video #62 (1:00:02) and add step wise image under conceptImages package.
