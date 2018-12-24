@@ -1,4 +1,4 @@
-package com.java.oops.constructor;
+package com.java.oops.constructor.defaultConstructor;
 
 public class Constructor_vs_InstanceBlock
 {
