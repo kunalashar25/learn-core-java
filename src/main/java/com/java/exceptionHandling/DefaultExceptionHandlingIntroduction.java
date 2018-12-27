@@ -1,4 +1,4 @@
-package com.java.exceptionHandling.defaultexceptionHandling;
+package com.java.exceptionHandling;
 
 public class DefaultExceptionHandlingIntroduction
 {
@@ -54,4 +54,3 @@ public class DefaultExceptionHandlingIntroduction
 // at
 // com.java.exceptionHandling.defaultexceptionHandling.DefaultExceptionHandlingIntroduction.main(DefaultExceptionHandlingIntroduction.java:7)
 
-// continue #69 from 35:21
