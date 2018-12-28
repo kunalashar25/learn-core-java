@@ -22,7 +22,7 @@ public class ExceptionHandlingIntroduction
 	// available then our program should not be terminated abnormally. We have to provide some local file to continue
 	// rest of the program normally. This way of defining alternative is nothing but exception handling.
 
-	public void smapleCode()
+	public void sampleCode()
 	{
 		try
 		{
