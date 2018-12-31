@@ -25,6 +25,6 @@ public class ExceptionHierarchy
 
 	// For Example: if OutOfMemoryError occurs, being a programmer we can't do anything and the program will be
 	// terminated abnormally. System admin or server admin is responsible to increase heap memory.
-}
 
-// start from 1:09:00
+	// Refer ExceptionHierarchy.png
+}
