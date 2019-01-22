@@ -1,4 +1,4 @@
-package com.java.exceptionHandling;
+package com.java.exceptionHandling.introduction;
 
 public class Checked_vs_Unchecked_Exceptions
 {

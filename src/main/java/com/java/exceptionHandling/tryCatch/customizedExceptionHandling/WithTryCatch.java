@@ -1,4 +1,4 @@
-package com.java.exceptionHandling.customizedExceptionHandling;
+package com.java.exceptionHandling.tryCatch.customizedExceptionHandling;
 
 public class WithTryCatch
 {
