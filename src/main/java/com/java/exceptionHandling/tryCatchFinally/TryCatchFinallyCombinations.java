@@ -1,4 +1,4 @@
-package com.java.exceptionHandling;
+package com.java.exceptionHandling.tryCatchFinally;
 
 public class TryCatchFinallyCombinations
 {

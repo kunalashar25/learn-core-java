@@ -1,4 +1,4 @@
-package com.java.exceptionHandling;
+package com.java.exceptionHandling.tryCatchFinally;
 
 public class Final_vs_Finally_Finalize
 {
