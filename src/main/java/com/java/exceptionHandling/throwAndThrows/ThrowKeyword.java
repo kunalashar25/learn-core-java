@@ -36,6 +36,6 @@ class Test2
 // Exception in thread "main" java.lang.ArithmeticException: / by zero thrown explicitly
 // at com.java.exceptionHandling.throwAndThrows.Test2.main(ThrowKeyword.java:30)
 
-// In this case, programmer is creating exception object explicitly and havdover to the JVM manually.
+// In this case, programmer is creating exception object explicitly and handover to the JVM manually.
 
 // Note: Best use of throw keyword is for user-defined exceptions or customized exceptions.
