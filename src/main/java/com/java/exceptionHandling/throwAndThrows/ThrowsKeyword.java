@@ -51,3 +51,23 @@ class Throws2
 
 // 2. Throws keyword is required only to convince compiler and usage of throws keyword doesn't prevent abnormal
 // termination of the program.
+
+class Throws3
+{
+	public static void main(String[] args) throws InterruptedException
+	{
+		doStuff();
+	}
+	
+	public static void doStuff() throws InterruptedException
+	{
+		doMoreStuff();
+	}
+
+	public static void doMoreStuff() throws InterruptedException
+	{
+		Thread.sleep(2000);
+	}
+}
+
+// In the above program if we remove atleast one throws statement then the code won't compile.
