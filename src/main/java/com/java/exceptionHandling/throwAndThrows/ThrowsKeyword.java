@@ -44,3 +44,10 @@ class Throws2
 		Thread.sleep(2000);
 	}
 }
+
+/** Conclusions **/
+// 1. Throws keyword required only for checked exceptions and usage of throws keyword for unchecked exceptions is
+// useless.
+
+// 2. Throws keyword is required only to convince compiler and usage of throws keyword doesn't prevent abnormal
+// termination of the program.
