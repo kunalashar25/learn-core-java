@@ -33,3 +33,9 @@ public class CustomizedExceptions
 // Age = 18: Your age is 18
 // Age = 12: Exception in thread "main" com.java.exceptionHandling.customizedExceptions.TooYoungException: too young
 // Age = 65: Exception in thread "main" com.java.exceptionHandling.customizedExceptions.TooOldException: too old
+
+// Note:
+// 1. throw keyword is best suitable for user defined or customized exceptions but not for predefined exceptions.
+// 2. it is highly recommended to define customized exception as unchecked i.e. we have to extend RuntimeException but
+// not Exception.
+// 3. super(String) is required to make description available to default exception handler.
