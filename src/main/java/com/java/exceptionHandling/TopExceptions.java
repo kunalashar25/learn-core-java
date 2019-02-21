@@ -51,5 +51,48 @@ public class TopExceptions
 	{
 		Object o = new Object();
 		String s = (String) o; // Exception
+
+		Object o1 = new String("String");
+		String s1 = (String) o1; // Valid
 	}
+
+	// 4. StackOverflowError
+	// i. It is a child class of Error and hence it's unchecked exception.
+	// ii. Raised automatically by JVM whenever we're trying to perform recursive method call.
+
+	// Example
+	public static void m4_1()
+	{
+		m4_2();
+	}
+
+	public static void m4_2()
+	{
+		m4_1();
+	}
+
+	// 5. NoClassDefFoundError
+	// i. It is a child class of Error and hence it's unchecked exception.
+	// ii. Raised automatically by JVM whenever JVM unable to find required .class file.
+
+	// Example
+	// java Test
+	// if Test.class file is not available then we'll get runtime exception saying NoClassDefFoundError : Test
+
+	// 6. ExceptionInInitializerError
+	// i. It is a child class of Error and hence it's unchecked exception.
+	// ii. Raised automatically by JVM if any exceptions occurs while executing static variable assignments and static
+	// blocks.
+
+	// Examples
+	static int x = 10 / 0; // Error
+
+	static
+	{
+		String s = null;
+		System.out.println(s.length()); // Error
+	}
+	
+	// 7. IllegalArgumentException
+	// start from #77
 }
