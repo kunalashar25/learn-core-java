@@ -1,4 +1,4 @@
-package com.java.exceptionHandling;
+package com.java.exceptionHandling.introduction;
 
 public class TopExceptions
 {
@@ -57,7 +57,7 @@ public class TopExceptions
 	}
 
 	// 4. StackOverflowError
-	// i. It is a child class of Error and hence it's unchecked exception.
+	// i. It is a child class of Error and hence it's unchecked.
 	// ii. Raised automatically by JVM whenever we're trying to perform recursive method call.
 
 	// Example
@@ -72,7 +72,7 @@ public class TopExceptions
 	}
 
 	// 5. NoClassDefFoundError
-	// i. It is a child class of Error and hence it's unchecked exception.
+	// i. It is a child class of Error and hence it's unchecked.
 	// ii. Raised automatically by JVM whenever JVM unable to find required .class file.
 
 	// Example
@@ -92,7 +92,58 @@ public class TopExceptions
 		String s = null;
 		System.out.println(s.length()); // Error
 	}
-	
+
 	// 7. IllegalArgumentException
-	// start from #77
+	// i. It is a child class of RuntimeException and hence it's unchecked exception.
+	// ii. Raised explicitly either by programmer or by API Developer to indicate that a method has been invoked with
+	// illegal argument.
+
+	// Example
+	// The valid range of thread priority is 1 to 10. If we're trying to set the priority with any other value then
+	// we'll get runtime exception saying IllegalArgumentException
+
+	public void m7()
+	{
+		Thread t = new Thread();
+		t.setPriority(7); // Valid
+		t.setPriority(15); // Exception
+	}
+
+	// 8. NumberFormatException
+	// i. It is a direct child class of IllegalArgumentException which is the child class of RuntimeException and hence
+	// it's unchecked exception.
+	// ii. Raised explicitly either by programmer or by API Developer to indicate that we're trying to convert string to
+	// number and the string is not properly formatted.
+
+	// Example
+	int i = Integer.parseInt("ten"); // Exception
+
+	// 9. IllegalStateException
+	// i. It is a child class of RuntimeException and hence it's unchecked exception.
+	// ii. Raised explicitly either by programmer or by API Developer to indicate that a method has been invoked at
+	// wrong time.
+
+	// Example
+	// After starting a thread we're not allowed to restart same thread again otherwise we'll get runtime exception
+	// saying IllegalStateException.
+
+	public void m9()
+	{
+		Thread t = new Thread();
+		t.start();
+
+		t.start(); // Exception
+	}
+
+	// 10. AssertionsError
+	// i. It is a child class of Error and hence it's unchecked.
+	// ii. Raised explicitly either by programmer or by API Developer to indicate that assert statement failed.
+
+	// Example
+	// if x is not greater than 10 then we'll get runtime exception saying AssertionsError.
+	public void m10()
+	{
+		int x = 14;
+		assert (x > 10);
+	}
 }
