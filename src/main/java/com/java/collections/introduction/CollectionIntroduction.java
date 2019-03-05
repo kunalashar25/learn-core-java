@@ -18,4 +18,17 @@ public class CollectionIntroduction
 	// 3. Arrays concept is not implemented based on some standard data structure and hence ready made method support is
 	// not available. For every requirement, we have to write the code explicitly which increases complexity of the
 	// programming.
+
+	// 4. To overcome above problems of arrays we should go for collections concept.
+
+	/** Collection Introduction **/
+	// 1. Collections are growable in nature i.e. based on our requirement we can increase or decrease the size.
+
+	// 2. Collections can hold both homogeneous and heterogeneous objects.
+
+	// 3. Every collection class is implemented based on some standard data structure. Hence, for every requirement
+	// ready made method support is available. Being a programmer we're responsible to use those methods and we're not
+	// responsible to implement those methods.
+	
+	// Refer Arrays_vs_Collections.PNG
 }
