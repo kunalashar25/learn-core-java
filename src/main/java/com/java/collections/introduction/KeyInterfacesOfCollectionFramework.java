@@ -36,4 +36,23 @@ public class KeyInterfacesOfCollectionFramework
 
 	/** 3. Set Interface **/
 	// 1. It is child interface of collection interface.
+
+	// 2. If we want to represent a group of individual objects as a single entity where duplicates are not allowed and
+	// insertion order is not required then we should go for Set interface.
+
+	/** 4. Sorted Set **/
+	// 1. It is child interface of Set interface.
+
+	// 2. If we want to represent a group of individual objects as a single entity where duplicates are not allowed and
+	// all objects should be inserted according to some sorting order then we should go for Sorted Set interface.
+
+	/** 5. Navigable Set **/
+	// 1. It is child interface of Sorted Set interface.
+
+	// 2. It contains several method for navigation purposes.
+
+	// 3. TreeSet class implements Navigable Set interface.
+	
+	// Refer List_vs_Set.PNG
+
 }
