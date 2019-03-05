@@ -29,6 +29,12 @@ public class CollectionIntroduction
 	// 3. Every collection class is implemented based on some standard data structure. Hence, for every requirement
 	// ready made method support is available. Being a programmer we're responsible to use those methods and we're not
 	// responsible to implement those methods.
-	
+
 	// Refer Arrays_vs_Collections.PNG
+
+	// If we want to represent a group of individual objects as a single entity then we should go for collection.
+
+	/** Collection framework **/
+	// It contains several classes and interfaces which can be used to represent a group of individual objects as single
+	// entity.
 }
