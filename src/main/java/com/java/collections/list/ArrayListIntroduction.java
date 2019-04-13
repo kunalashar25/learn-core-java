@@ -39,7 +39,7 @@ public class ArrayListIntroduction
 
 	// 3. Creates and equivalent ArrayList object for the given collection.
 
-	// ArrayList l3 = new ArrayList<>(l1);
+	// ArrayList l3 = new ArrayList(Collection c);
 
 	/** Examples **/
 	public static void main(String[] args)
