@@ -20,5 +20,4 @@ public class ListInterface
 	// vii. int lastIndexOf (Object o)
 	// viii. ListIterator listIterator();
 	
-	// Start from 33.30 #134
 }
