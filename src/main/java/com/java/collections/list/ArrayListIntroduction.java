@@ -19,6 +19,8 @@ public class ArrayListIntroduction
 	// objects. Heterogeneous means different type of objects).
 
 	// 5. null insertion is possible.
+	
+	// 6. All elements are stored in consecutive memory location. Hence, retrieval is fast.
 
 	/** Constructors in ArrayList **/
 	// 1. Below statement creates an empty ArrayList object with default initial capacity of 10.

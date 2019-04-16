@@ -20,6 +20,8 @@ public class LinkedListIntroduction
 	// 7. LinkedList is the best choice if our frequent operation is insertion/deletion in middle index.
 
 	// 8. LinedList is the worst choice if our frequent operation is retrieval operation.
+	
+	// 9. Elements are not stored in consecutive memory location. Hence, retrieval is slow.
 
 	/** Constructors in LinkedList **/
 
