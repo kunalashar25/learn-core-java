@@ -44,4 +44,12 @@ public class EnumerationCursor
 		// 8
 		// 10
 	}
+
+	/** Limitations **/
+	// 1. We can apply Enumeration concept only for legacy classes and it is not a universal cursor i.e. it can only be
+	// applied to legacy classes like Vector and Stack.
+
+	// 2. By using enumeration, we can get only read access and we can't perform remove operation.
+	
+	// 3. To Overcome above limitations we should go for Iterator cursor.
 }
