@@ -56,6 +56,8 @@ public class ListIteratorCursor
 
 		ListIterator itr = list.listIterator();
 
+		System.out.println(itr.getClass().getName()); // Output: java.util.LinkedList$ListItr
+
 		while (itr.hasNext())
 		{
 			String s = (String) itr.next();

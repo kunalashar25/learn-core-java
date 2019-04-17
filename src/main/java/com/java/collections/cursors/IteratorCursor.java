@@ -34,6 +34,8 @@ public class IteratorCursor
 
 		Iterator itr = l.iterator();
 
+		System.out.println(itr.getClass().getName()); // Output: java.util.ArrayList$Itr 
+
 		while (itr.hasNext())
 		{
 			Integer i = (Integer) itr.next();
@@ -65,6 +67,6 @@ public class IteratorCursor
 
 	// 2. By using Iterator, we can perform only read and remove operations and we can't perform add and replace
 	// operations.
-	
+
 	// 3. To overcome above limitations we should go for ListIterator.
 }
