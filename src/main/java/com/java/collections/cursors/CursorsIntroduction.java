@@ -8,4 +8,6 @@ public class CursorsIntroduction
 	// i. Enumeration
 	// ii. Iterator
 	// iii. ListIterator
+	
+	// Refer CursorsComparison.PNG
 }
