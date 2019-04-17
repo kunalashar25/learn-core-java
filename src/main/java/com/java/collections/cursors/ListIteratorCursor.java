@@ -75,4 +75,6 @@ public class ListIteratorCursor
 
 		System.out.println(list); // Output: [B, E, F, D]
 	}
+
+	// Note: The most powerful cursor is ListIterator but its limitation is that it is applicable only for List Objects.
 }
