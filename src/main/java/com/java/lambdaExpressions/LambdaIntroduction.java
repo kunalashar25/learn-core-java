@@ -14,7 +14,8 @@ public class LambdaIntroduction
 	// 4. return keyword should always be specified inside curly braces. You can return any value without using return
 	// keyword as well if you have a single line of code.
 
-	// 5. For single parameter expression, there is no need to provide round braces.
+	// 5. For single parameter expression, there is no need to provide round braces, they're optional but for zero or
+	// more than 1 parameter, round braces is mandatory.
 
 	// Example 1
 	public void m1()
@@ -49,7 +50,7 @@ public class LambdaIntroduction
 		(a, b) -> System.out.println(a+b);
 		
 		// equivalent lambda expression for Example 3
-		(int n) -> { return n*n}; // curly braces are mandatory with return keyword.
+		(int n) -> { return n*n;}; // curly braces are mandatory with return keyword.
 		(int n) -> n*n; // no need for return keyword for single statement.
 		(n) -> n*n; // compiler can guess return type automatically.
 		n -> n*n; // no need of round braces for single parameter.
