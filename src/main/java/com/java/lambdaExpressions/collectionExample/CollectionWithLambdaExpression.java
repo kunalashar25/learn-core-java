@@ -1,4 +1,4 @@
-package com.java.lambdaExpressions;
+package com.java.lambdaExpressions.collectionExample;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,7 +23,7 @@ public class CollectionWithLambdaExpression
 		
 		Collections.sort(list, c);
 		
-		System.out.println(list); // OUtput: [0, 5, 10, 15, 25, 30]
+		System.out.println(list); // Output: [0, 5, 10, 15, 25, 30]
 		
 		// to print each value of collection one by one
 		list.stream().forEach(System.out::println);

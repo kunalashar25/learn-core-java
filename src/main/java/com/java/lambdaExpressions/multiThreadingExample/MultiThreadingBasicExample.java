@@ -1,4 +1,4 @@
-package com.java.lambdaExpressions;
+package com.java.lambdaExpressions.multiThreadingExample;
 
 public class MultiThreadingBasicExample
 {

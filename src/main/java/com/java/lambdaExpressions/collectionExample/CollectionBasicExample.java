@@ -1,4 +1,4 @@
-package com.java.lambdaExpressions;
+package com.java.lambdaExpressions.collectionExample;
 
 import java.util.ArrayList;
 import java.util.Collections;

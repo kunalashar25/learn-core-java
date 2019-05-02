@@ -1,4 +1,4 @@
-package com.java.lambdaExpressions;
+package com.java.lambdaExpressions.introduction;
 
 import java.util.function.Function;
 
