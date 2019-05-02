@@ -3,6 +3,8 @@ package com.java.lambdaExpressions;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class CollectionWithLambdaExpression
 {
@@ -22,5 +24,12 @@ public class CollectionWithLambdaExpression
 		Collections.sort(list, c);
 		
 		System.out.println(list); // OUtput: [0, 5, 10, 15, 25, 30]
+		
+		// to print each value of collection one by one
+		list.stream().forEach(System.out::println);
+		
+		// to print only even numbers
+		List<Integer> list2 = list.stream().filter(i->i%2==0).collect(Collectors.toList());
+		System.out.println(list2); // Output: [0, 10, 30]
 	}
 }
