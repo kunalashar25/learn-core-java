@@ -1,6 +1,6 @@
 package com.java.interfaces.methods;
 
-public interface InterfaceMethods
+public interface AbstractMethods
 {
 	// Every method present inside interface is always public and abstract whether we're declaring or not.
 
