@@ -1,4 +1,4 @@
-package com.java.interfaces;
+package com.java.interfaces.methods;
 
 public interface InterfaceMethods
 {
