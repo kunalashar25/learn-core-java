@@ -7,7 +7,7 @@ public class PredicateFI
 {
 	// 1. Predicate interface is used to perform conditional checks.
 
-	// 2. It contains only one abstract method.
+	// 2. It contains only one abstract method and always returns boolean.
 	// public abstract boolean test(T t)
 
 	public static void main(String[] args)

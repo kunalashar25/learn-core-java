@@ -13,6 +13,11 @@ public class FunctionFI
 	// 3. It contains apply() method.
 	// Syntax: public R apply(T t)
 
+	// 4. Function chaining is possible using method andThen() from Function interface. Any number of functions can be
+	// applied to below method.
+	// i. f1.andThen(f2).apply(i) >> First f1 is applied and then f2 is applied.
+	// ii. f1.compose(f2).apply(i) >> First f2 is applied and then f1 is applied.
+
 	public static void main(String[] args)
 	{
 		// Example 1
@@ -61,6 +66,13 @@ public class FunctionFI
 		// Output:
 		// Student name : ABC | Grade : Pass
 		// Student name : PQR | Grade : Distinction
+
+		// Example 5: Function Chaining
+		Function<Integer, Integer> f5 = i -> 2 * i;
+		Function<Integer, Integer> f6 = i -> i * i * i;
+
+		System.out.println(f5.andThen(f6).apply(2)); // Output: 64
+		System.out.println(f5.compose(f6).apply(2)); // Output: 16
 	}
 }
 
