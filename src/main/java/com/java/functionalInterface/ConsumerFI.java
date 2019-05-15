@@ -7,6 +7,9 @@ public class ConsumerFI
 	// 1. It is used to consume an input and perform some actions without returning any output. Return type is void.
 
 	// 2. public void accept(T t)
+	
+	// 3. Consumer chaining is possible using andThen() method
+	// c1.andThen(c2).andThen(c3).accept(inputParam);
 
 	public static void main(String[] args)
 	{
