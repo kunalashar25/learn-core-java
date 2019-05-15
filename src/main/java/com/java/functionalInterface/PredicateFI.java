@@ -10,8 +10,6 @@ public class PredicateFI
 	// 2. It contains only one abstract method.
 	// public abstract boolean test(T t)
 
-	// 3. <T,R> syntax: T specifies input type of object and R specifies return type of object.
-
 	public static void main(String[] args)
 	{
 		// Example 1
