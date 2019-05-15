@@ -7,7 +7,7 @@ public class ConsumerFI
 	// 1. It is used to consume an input and perform some actions without returning any output. Return type is void.
 
 	// 2. public void accept(T t)
-	
+
 	// 3. Consumer chaining is possible using andThen() method
 	// c1.andThen(c2).andThen(c3).accept(inputParam);
 
@@ -19,14 +19,14 @@ public class ConsumerFI
 		c1.accept("Home"); // Output: Home
 
 		// Example 2: Refer Student class from FunctionFI.java
-		Consumer<Student> c2 = s ->
+		Consumer<Student1> c2 = s ->
 		{
 			System.out.println("Student Name: " + s.name);
 			System.out.println("Student Marks: " + s.marks);
 			System.out.println("------------------");
 		};
-		Student[] s = { new Student("ABC", 65), new Student("PQR", 92), new Student("LMN", 22) };
-		for (Student s1 : s)
+		Student1[] s = { new Student1("ABC", 65), new Student1("PQR", 92), new Student1("LMN", 22) };
+		for (Student1 s1 : s)
 		{
 			c2.accept(s1);
 		}
@@ -40,5 +40,17 @@ public class ConsumerFI
 		// Student Name: LMN
 		// Student Marks: 22
 		// ------------------
+	}
+}
+
+class Student1
+{
+	String	name;
+	int		marks;
+
+	public Student1(String name, int marks)
+	{
+		this.name = name;
+		this.marks = marks;
 	}
 }
