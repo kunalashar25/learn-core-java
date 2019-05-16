@@ -11,6 +11,6 @@ public class BinaryOperatorFI
 	public static void main(String[] args)
 	{
 		BinaryOperator<Integer> o = (a, b) -> a * b;
-		System.out.println(o.apply(5, 2)); // Output: 10
+		System.out.println(o.apply(5, 3)); // Output: 15
 	}
 }
