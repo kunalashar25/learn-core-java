@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class TwoDArrayDeclaration
-{
+public class TwoDArrayDeclaration {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int[][] a; // valid
 		int[][] b; // valid
 		int c[][]; // valid

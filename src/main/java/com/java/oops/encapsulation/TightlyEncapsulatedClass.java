@@ -1,7 +1,6 @@
 package com.java.oops.encapsulation;
 
-public class TightlyEncapsulatedClass
-{
+public class TightlyEncapsulatedClass {
 	// 1. A class is said to be tightly encapsulated if and only if each and every variable declared as private, whether
 	// class contains corresponding getter and setter methods or not and whether these methods are declared as public or
 	// not, these things we're not required to check.
@@ -9,8 +8,7 @@ public class TightlyEncapsulatedClass
 	// Example
 	private double balance;
 
-	public double getBalance()
-	{
+	public double getBalance() {
 		return balance;
 	}
 

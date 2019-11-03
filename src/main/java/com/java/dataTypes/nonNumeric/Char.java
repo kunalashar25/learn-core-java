@@ -1,7 +1,6 @@
 package com.java.dataTypes.nonNumeric;
 
-public class Char
-{
+public class Char {
 	// Size: 2 Bytes
 
 	// java is unicode base whereas old languages are ascii code based
@@ -16,8 +15,7 @@ public class Char
 	// 65536. So instead of 8bits we go for 16bits in java which is equivalent
 	// to 2 Bytes.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		char a = 'a';
 
 		System.out.println(a);

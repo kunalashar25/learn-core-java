@@ -1,7 +1,6 @@
 package com.java.collections.list;
 
-public class ListInterface
-{
+public class ListInterface {
 	// 1. List is a child interface of collection.
 
 	// 2. If we want to represent a group of individual objects as a single entity where duplicates are allowed and
@@ -19,5 +18,5 @@ public class ListInterface
 	// vi. int indexOf (Object o)
 	// vii. int lastIndexOf (Object o)
 	// viii. ListIterator listIterator();
-	
+
 }

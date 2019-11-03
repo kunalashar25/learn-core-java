@@ -2,8 +2,7 @@ package com.java.functionalInterface;
 
 import java.util.function.Consumer;
 
-public class ConsumerFI
-{
+public class ConsumerFI {
 	// 1. It is used to consume an input and perform some actions without returning any output. Return type is void.
 
 	// 2. public void accept(T t)
@@ -11,8 +10,7 @@ public class ConsumerFI
 	// 3. Consumer chaining is possible using andThen() method
 	// c1.andThen(c2).andThen(c3).accept(inputParam);
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Example 1
 		Consumer<String> c1 = s -> System.out.println(s);
 		c1.accept("Test"); // Output: Test
@@ -25,9 +23,8 @@ public class ConsumerFI
 			System.out.println("Student Marks: " + s.marks);
 			System.out.println("------------------");
 		};
-		Student1[] s = { new Student1("ABC", 65), new Student1("PQR", 92), new Student1("LMN", 22) };
-		for (Student1 s1 : s)
-		{
+		Student1[] s = {new Student1("ABC", 65), new Student1("PQR", 92), new Student1("LMN", 22)};
+		for (Student1 s1 : s) {
 			c2.accept(s1);
 		}
 		// Output:
@@ -43,13 +40,11 @@ public class ConsumerFI
 	}
 }
 
-class Student1
-{
-	String	name;
-	int		marks;
+class Student1 {
+	String name;
+	int marks;
 
-	public Student1(String name, int marks)
-	{
+	public Student1(String name, int marks) {
 		this.name = name;
 		this.marks = marks;
 	}

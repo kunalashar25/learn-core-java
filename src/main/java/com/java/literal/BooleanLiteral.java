@@ -1,10 +1,8 @@
 package com.java.literal;
 
-public class BooleanLiteral
-{
+public class BooleanLiteral {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// only allowed values for boolean DataTypes are true and false.
 
 		boolean a = true; // valid
@@ -21,7 +19,7 @@ public class BooleanLiteral
 		// CE: Incompatible types
 		/*
 		 * if(x) { System.out.println("hello"); }
-		 * 
+		 *
 		 * while (x) { System.out.println("hello"); }
 		 */
 	}

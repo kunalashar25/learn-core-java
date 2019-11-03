@@ -2,8 +2,7 @@ package com.java.collections.set;
 
 import java.util.HashSet;
 
-public class HashSetIntroduction
-{
+public class HashSetIntroduction {
 	// 1. The underlying data structure is Hashtable.
 
 	// 2. Duplicate objects are not allowed.
@@ -21,8 +20,7 @@ public class HashSetIntroduction
 	// Note: In HashSet, duplicates are not allowed. If we're trying to insert duplicates then we won't get any compile
 	// time or runtime errors and add() method simply returns false.
 
-	public static void addExample()
-	{
+	public static void addExample() {
 		HashSet h = new HashSet<>();
 		System.out.println(h.add("A")); // Output: true
 		System.out.println(h.add("A")); // Output: false
@@ -41,15 +39,15 @@ public class HashSetIntroduction
 	// 4. HashSet h = new HashSet(Collection c); creates an equivalent HashSet for the given collection. This
 	// constructor is meant for inter-conversion between collection objects.
 
-	/** Fill Ratio or Load Factor **/
+	/**
+	 * Fill Ratio or Load Factor
+	 **/
 	// 1. After filling a particular ratio a new HashSet object will be created, this ratio is called Fill Ratio or Load
 	// Factor.
 
 	// Example: Fill Ratio 0.75 means, after filling 75% ratio of initial capacity, a new HashSet object will be
 	// created.
-
-	public static void hashSetDemo()
-	{
+	public static void hashSetDemo() {
 		HashSet h = new HashSet<>();
 		h.add("A");
 		h.add("B");
@@ -62,8 +60,7 @@ public class HashSetIntroduction
 		// insertion order is not preserved.
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		addExample();
 
 		hashSetDemo();

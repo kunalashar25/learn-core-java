@@ -1,10 +1,8 @@
 package com.java.codeSnippets.variables;
 
-public class Snippet08
-{
+public class Snippet08 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		String a = "Hello", b = "Java";
 		System.out.println(a); // Output: Hello
 		System.out.println(b); // Output: Java
@@ -22,5 +20,7 @@ public class Snippet08
 	}
 
 }
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // We can declare and initialize multiple variables of same type on a single line.

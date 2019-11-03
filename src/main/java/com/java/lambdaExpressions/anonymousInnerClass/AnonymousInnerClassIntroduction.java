@@ -1,7 +1,6 @@
 package com.java.lambdaExpressions.anonymousInnerClass;
 
-public class AnonymousInnerClassIntroduction
-{
+public class AnonymousInnerClassIntroduction {
 	// 1. An inner class without any name is called Anonymous Inner Class.
 
 	// 2. Syntax: Thread t = new Thread() { // some code };
@@ -12,14 +11,11 @@ public class AnonymousInnerClassIntroduction
 	// In this case, we're not creating interface object but instead we're creating an child class that implements
 	// Runnable interface.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// anonymous inner class implementing Runnable interface. It is an object of interface implementation class.
 		Runnable r = new Runnable() {
-			public void run()
-			{
-				for (int i = 0; i < 10; i++)
-				{
+			public void run() {
+				for (int i = 0; i < 10; i++) {
 					System.out.println("Child Thread : " + i);
 				}
 			}
@@ -28,8 +24,7 @@ public class AnonymousInnerClassIntroduction
 		Thread t = new Thread(r);
 		t.start();
 
-		for (int i = 0; i < 10; i++)
-		{
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Parent Thread : " + i);
 		}
 	}

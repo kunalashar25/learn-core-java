@@ -1,10 +1,8 @@
 package com.java.literal;
 
-public class CharLiteral
-{
+public class CharLiteral {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// we can specify char literal as single char within single quotes
 		char ch = 'a'; // valid
 

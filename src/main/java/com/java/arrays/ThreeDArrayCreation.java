@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class ThreeDArrayCreation
-{
+public class ThreeDArrayCreation {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/** 3 dimensional array with variable sizes **/
 		// 2 is base size of this array
 		int[][][] y = new int[2][][];

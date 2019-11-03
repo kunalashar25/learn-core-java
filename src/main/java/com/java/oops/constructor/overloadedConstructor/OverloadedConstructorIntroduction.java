@@ -1,7 +1,6 @@
 package com.java.oops.constructor.overloadedConstructor;
 
-public class OverloadedConstructorIntroduction
-{
+public class OverloadedConstructorIntroduction {
 	// 1. Within a class we can declare multiple constructors and all these constructors having same name but different
 	// argument types. Hence, all these constructors are considered as overloaded constructors.
 
@@ -15,25 +14,21 @@ public class OverloadedConstructorIntroduction
 	// is required in every class but all variable present inside interface are static variables. Hence there is no need
 	// of constructor in interface.
 
-	public OverloadedConstructorIntroduction()
-	{
+	public OverloadedConstructorIntroduction() {
 		this(10);
 		System.out.println("no-arg");
 	}
 
-	public OverloadedConstructorIntroduction(int i)
-	{
+	public OverloadedConstructorIntroduction(int i) {
 		this(10.5);
 		System.out.println("int-arg");
 	}
 
-	public OverloadedConstructorIntroduction(double d)
-	{
+	public OverloadedConstructorIntroduction(double d) {
 		System.out.println("double-arg");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		OverloadedConstructorIntroduction o1 = new OverloadedConstructorIntroduction();
 		// Output:
 		// double-arg

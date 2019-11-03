@@ -1,11 +1,9 @@
 package com.java.operatorsAndAssignment;
 
-public class EqualityOperators
-{
+public class EqualityOperators {
 	// == , !=
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		/** We can apply equality operators for every primitive type including boolean type **/
 		System.out.println(10 == 20); // Output: false

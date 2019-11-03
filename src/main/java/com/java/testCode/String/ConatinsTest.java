@@ -1,10 +1,8 @@
 package com.java.testCode.String;
 
-public class ConatinsTest
-{
+public class ConatinsTest {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		String a = "test123";
 		String b = "123";
 

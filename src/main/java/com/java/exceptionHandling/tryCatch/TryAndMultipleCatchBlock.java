@@ -1,31 +1,22 @@
 package com.java.exceptionHandling.tryCatch;
 
-public class TryAndMultipleCatchBlock
-{
+public class TryAndMultipleCatchBlock {
 
 	// 1. The way of handling an exception is varied from exception to exception. Hence, for every exception type it is
 	// highly recommended to take separate catch block i.e. try with multiple catch block is always possible and
 	// recommended to use.
 
-	static int		a	= 10;
-	static String	b	= "0";
+	static int a = 10;
+	static String b = "0";
 
-	public static void main(String[] args)
-	{
-		try
-		{
+	public static void main(String[] args) {
+		try {
 			System.out.println(a / Integer.parseInt(b));
-		}
-		catch (NumberFormatException e)
-		{
+		} catch (NumberFormatException e) {
 			e.printStackTrace();
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 			e.printStackTrace();
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,7 +1,6 @@
 package com.java.accessModifiers.staticPack;
 
-public class StaticMethod3
-{
+public class StaticMethod3 {
 	// Case 3: It seems overriding concept is applicable for static methods but it is not overriding, it is method
 	// hiding.
 
@@ -9,16 +8,13 @@ public class StaticMethod3
 	// For static methods overloading and inheritance concepts are applicable but overriding concept is not applicable
 	// but instead of overriding method hiding concept is applicable.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		System.out.println("parent main");
 	}
 }
 
-class child1 extends StaticMethod3
-{
-	public static void main(String[] args)
-	{
+class child1 extends StaticMethod3 {
+	public static void main(String[] args) {
 		System.out.println("child1 main");
 	}
 }

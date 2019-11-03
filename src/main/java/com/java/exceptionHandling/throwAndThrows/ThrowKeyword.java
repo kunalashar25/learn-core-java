@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.throwAndThrows;
 
-public class ThrowKeyword
-{
+public class ThrowKeyword {
 	// 1. Sometimes we can create exception object explicitly. We can handover to the JVM manually, for this we have to
 	// use throw keyword.
 
@@ -12,10 +11,8 @@ public class ThrowKeyword
 	// The Result of following two program is exactly same:
 }
 
-class Test1
-{
-	public static void main(String[] args)
-	{
+class Test1 {
+	public static void main(String[] args) {
 		System.out.println(10 / 0);
 	}
 }
@@ -25,10 +22,8 @@ class Test1
 
 // In this case, main() method is responsible to create exception object and handover to the JVM.
 
-class Test2
-{
-	public static void main(String[] args)
-	{
+class Test2 {
+	public static void main(String[] args) {
 		throw new ArithmeticException("/ by zero thrown explicitly");
 	}
 }

@@ -1,9 +1,7 @@
 package com.java.varargs;
 
-public class VarArgs
-{
-	public static void main(String[] args)
-	{
+public class VarArgs {
+	public static void main(String[] args) {
 		// var-args methods: Variable number of arguments methods.
 
 		// Until v1.4, we can't declare a method with variable number of arguments. If there is a change in number of
@@ -27,18 +25,18 @@ public class VarArgs
 
 	// method declaration
 	// exactly three dots has to be provided and has to be kept together else we'll get compile time error.
-	void m1(int... x)
-	{
+	void m1(int... x) {
 		int c = 0;
-		for (int a : x)
-		{
+		for (int a : x) {
 			c = c + a;
 		}
 		System.out.println("Number of args: " + x.length);
 		System.out.println("Total sum: " + c);
 	}
 
-	/** Loop Holes **/
+	/**
+	 * Loop Holes
+	 **/
 	// Case 1: Which of following are var-arg method declaration are valid?
 	void a(int... a) // Valid
 	{
@@ -58,13 +56,11 @@ public class VarArgs
 	// Note: Three dots should be together and before variable.
 
 	// Case 2: We can mix var-arg parameter with normal parameter
-	void d(int a, int... x)
-	{
+	void d(int a, int... x) {
 
 	}
 
-	void e(String str, double... d)
-	{
+	void e(String str, double... d) {
 
 	}
 

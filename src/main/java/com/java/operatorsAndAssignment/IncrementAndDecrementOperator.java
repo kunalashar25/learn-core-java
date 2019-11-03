@@ -1,12 +1,10 @@
 package com.java.operatorsAndAssignment;
 
-public class IncrementAndDecrementOperator
-{
-	static int	x	= 1;
-	static int	y	= 0;
+public class IncrementAndDecrementOperator {
+	static int x = 1;
+	static int y = 0;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/** Two Types of Increment Operators **/
 		// 1. PreIncrement
 		y = ++x;

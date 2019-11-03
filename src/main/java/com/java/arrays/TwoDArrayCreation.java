@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class TwoDArrayCreation
-{
+public class TwoDArrayCreation {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// In java 2D array not implemented by using matrix representation. Some
 		// people followed array or arrays approach for multi-dimensional array
 		// creation. The main advantage of this approach is memory utilization

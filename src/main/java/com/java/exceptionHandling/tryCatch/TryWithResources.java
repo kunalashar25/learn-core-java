@@ -1,37 +1,25 @@
 package com.java.exceptionHandling.tryCatch;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TryWithResources
-{
+public class TryWithResources {
 	// 1. Until 1.6v it is highly recommended to write finally block to close resources which are open as a part of try
 	// block.
-	public void m1()
-	{
+	public void m1() {
 
 		BufferedReader br = null;
 
-		try
-		{
+		try {
 			br = new BufferedReader(new FileReader("input.txt"));
-		}
-		catch (IOException e)
-		{
+		} catch (IOException e) {
 			System.out.println(e);
-		}
-		finally
-		{
-			if (br != null)
-			{
-				try
-				{
+		} finally {
+			if (br != null) {
+				try {
 					br.close();
-				}
-				catch (IOException e)
-				{
+				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			}
@@ -49,20 +37,19 @@ public class TryWithResources
 	// closed automatically once control reaches end of try block either normally or abnormally and hence, we're not
 	// required to close explicitly. We're not required to write finally block.
 
-	public void m2()
-	{
+	public void m2() {
 		// try with single resource
-		try (BufferedReader br = new BufferedReader(new FileReader("input.txt")))
-		{
+		try (BufferedReader br = new BufferedReader(new FileReader("input.txt"))) {
 
 		} // br will be automatically closed here
-		catch (Exception e)
-		{
+		catch (Exception e) {
 
 		}
 	}
 
-	/** Conclusions **/
+	/**
+	 * Conclusions
+	 **/
 	// 1. We can declare multiple resources in try but these resources should be separated with semicolon.
 	// Syntax: try(R1;R2;R3)
 
@@ -78,17 +65,13 @@ public class TryWithResources
 
 	// 6. All Resource reference variables are implicitly final and hence within the try block we can't perform
 	// reassignment otherwise we'll get compile time error.
-
-	public void m3()
-	{
+	public void m3() {
 		// try with single resource
-		try (BufferedReader br = new BufferedReader(new FileReader("input.txt")))
-		{
+		try (BufferedReader br = new BufferedReader(new FileReader("input.txt"))) {
 			br = new BufferedReader(new FileReader("output.txt")); // CE: auto-closable resource br may not be assigned
 		} // br will be automatically closed here
-		catch (Exception e)
-		{
+		catch (Exception e) {
 			System.out.println(e);
 		}
-	}	
+	}
 }

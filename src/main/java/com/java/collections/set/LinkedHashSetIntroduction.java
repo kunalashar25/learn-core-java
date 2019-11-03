@@ -2,15 +2,13 @@ package com.java.collections.set;
 
 import java.util.LinkedHashSet;
 
-public class LinkedHashSetIntroduction
-{
+public class LinkedHashSetIntroduction {
 	// 1. It is the child class of HashSet.
 
 	// 2. It is exactly same as HashSet(including constructors and methods) except the following differences:
 	// Refer HashSet_vs_LinkedHashSet.PNG
 
-	public static void linkedHashSetDemo()
-	{
+	public static void linkedHashSetDemo() {
 		LinkedHashSet h = new LinkedHashSet<>();
 		h.add("A");
 		h.add("B");
@@ -23,8 +21,7 @@ public class LinkedHashSetIntroduction
 		// insertion order is preserved.
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		linkedHashSetDemo();
 	}
 

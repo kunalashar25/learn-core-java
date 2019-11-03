@@ -1,7 +1,6 @@
 package com.java.oops.overloading;
 
-public class OverloadingIntroduction
-{
+public class OverloadingIntroduction {
 	// 1. Two methods are said to be overloaded if and only if both methods have same name but different argument types.
 
 	// 2. In C, method overloading concept is not available. Hence, we can't declare multiple methods with same name but
@@ -13,23 +12,19 @@ public class OverloadingIntroduction
 
 	// 4. Having overloading concept in java reduces complexity of programming.
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("no-args");
 	}
 
-	public void m1(int a)
-	{
+	public void m1(int a) {
 		System.out.println("int-args");
 	}
 
-	public void m1(float a)
-	{
+	public void m1(float a) {
 		System.out.println("float-args");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		OverloadingIntroduction o = new OverloadingIntroduction();
 		o.m1(); // Output: no-args
 		o.m1(1); // Output: int-args

@@ -1,14 +1,11 @@
 package com.java.flowControl.transferStatements;
 
-public class DoWhileVsContinue
-{
+public class DoWhileVsContinue {
 	// Deadly Combination
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int x = 0;
 
-		do
-		{
+		do {
 			x++;
 			System.out.println(x);
 			if (++x < 5)

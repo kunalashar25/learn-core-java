@@ -1,11 +1,9 @@
 package com.java.lambdaExpressions.lambdaAlternatives;
 
-public class ConstructorReference
-{
+public class ConstructorReference {
 	// 1.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Interf2 i = Sample::new; // Syntax: className::new to refer class constructor
 		Sample s1 = i.get(); // Output: Sample Object created.
 
@@ -14,25 +12,20 @@ public class ConstructorReference
 	}
 }
 
-interface Interf2
-{
+interface Interf2 {
 	public Sample get(); // get() methods refers to constructor of Sample class.
 }
 
-interface Interf3
-{
+interface Interf3 {
 	public Sample get(String s);
 }
 
-class Sample
-{
-	public Sample()
-	{
+class Sample {
+	public Sample() {
 		System.out.println("Sample Object created.");
 	}
 
-	public Sample(String s)
-	{
+	public Sample(String s) {
 		System.out.println("Sample Object created with string: " + s);
 	}
 }

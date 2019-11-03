@@ -1,14 +1,11 @@
 package com.java.flowControl.transferStatements;
 
-public class ContinueStatement
-{
+public class ContinueStatement {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// 1. We can use continue statement inside loops to skip current iteration and continue for the next iteration.
 
-		for (int i = 0; i < 10; i++)
-		{
+		for (int i = 0; i < 10; i++) {
 			if (i % 2 == 0)
 				continue; // will transfer control to for loop if i % 2 ==0
 			System.out.println(i);

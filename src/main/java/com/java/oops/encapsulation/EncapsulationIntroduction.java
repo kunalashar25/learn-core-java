@@ -1,7 +1,6 @@
 package com.java.oops.encapsulation;
 
-public class EncapsulationIntroduction
-{
+public class EncapsulationIntroduction {
 
 	// 1. The process of binding data and corresponding methods into a single unit is known as Encapsulation.
 
@@ -9,13 +8,11 @@ public class EncapsulationIntroduction
 
 	private int rollNo;
 
-	public int getRollNo()
-	{
+	public int getRollNo() {
 		return rollNo;
 	}
 
-	public void setRollNo(int rollNo)
-	{
+	public void setRollNo(int rollNo) {
 		this.rollNo = rollNo;
 	}
 

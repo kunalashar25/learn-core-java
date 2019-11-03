@@ -1,15 +1,12 @@
 package com.java.flowControl.staticAndInstanceControlFlow;
 
-public class StaticAndInstanceControlFlow2
-{
-	private static String m1(String num)
-	{
+public class StaticAndInstanceControlFlow2 {
+	private static String m1(String num) {
 		System.out.println(num);
 		return num;
 	}
 
-	public StaticAndInstanceControlFlow2()
-	{
+	public StaticAndInstanceControlFlow2() {
 		m = m1("1");
 	}
 
@@ -19,8 +16,7 @@ public class StaticAndInstanceControlFlow2
 
 	String m = m1("3");
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Object o = new StaticAndInstanceControlFlow2();
 	}
 }

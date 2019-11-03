@@ -1,7 +1,6 @@
 package com.java.oops.abstraction;
 
-public class AbstractionIntroduction
-{
+public class AbstractionIntroduction {
 	// 1. Hiding internal implementation and just highlighting the set of service which are offered is concept of
 	// Abstraction.
 

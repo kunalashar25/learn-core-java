@@ -1,14 +1,12 @@
 package com.java.operatorsAndAssignment;
 
-public class BitwiseOperators
-{
+public class BitwiseOperators {
 	// Symbol: &,|,^
 	// & = AND Returns true if both args are true
 	// | = OR Returns true if atleast one arg is true
 	// ^ = X-OR (Exclusive OR) Returns true
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/** Applicable for both boolean and integral types **/
 
 		System.out.println(true & false); // Output: false

@@ -1,7 +1,6 @@
 package com.java.main;
 
-public class MainMethodEnhancements
-{
+public class MainMethodEnhancements {
 	/** Enhancement came to main() in java v1.7 **/
 
 	// Until v1.6, if class doesn't contain main() then we'll get runtime exception saying NoSuchMethodError: main but
@@ -12,8 +11,7 @@ public class MainMethodEnhancements
 	// From v1.7 onwards, main method is mandatory to start program execution. Hence, even though class contains static
 	// block it won't be executed if the class doesn't contain main method.
 	// Error with v1.7: main method not found in class MainMethodEnhancements
-	static
-	{
+	static {
 		System.out.println("Static block");
 		System.exit(0); // This command will shut down JVM.
 	}

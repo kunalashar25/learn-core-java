@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class PolymorphismIntroduction
-{
+public class PolymorphismIntroduction {
 	// 1. One name but multiple forms is called polymorphism.
 
 	// Example 1: method name is same but we can apply for different types of arguments (overloading concept).
@@ -16,12 +15,11 @@ public class PolymorphismIntroduction
 	// 2. Usage of parent reference to hold child object is concept of polymorphism.
 
 	// Example
-	static List<String>	l1	= new ArrayList<String>();
+	static List<String> l1 = new ArrayList<String>();
 
-	static List<String>	l2	= new LinkedList<String>();
+	static List<String> l2 = new LinkedList<String>();
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// 3. Parent class reference can be used to hold child objects but by using that reference we can call only the
 		// methods available in parent class and we can't call child specific methods.
 
@@ -50,31 +48,24 @@ public class PolymorphismIntroduction
 
 }
 
-class Parent
-{
-	public void m1()
-	{
+class Parent {
+	public void m1() {
 		System.out.println("Parent m1");
 	}
 }
 
-class Child extends Parent
-{
-	public void m2()
-	{
+class Child extends Parent {
+	public void m2() {
 		System.out.println("Child m2");
 	}
 }
 
-class Child1 extends Parent
-{
-	public void m1()
-	{
+class Child1 extends Parent {
+	public void m1() {
 		System.out.println("Child m1");
 	}
 
-	public void m2()
-	{
+	public void m2() {
 		System.out.println("Child m2");
 	}
 }

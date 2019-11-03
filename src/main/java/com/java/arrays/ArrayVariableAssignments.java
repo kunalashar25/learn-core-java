@@ -1,17 +1,15 @@
 package com.java.arrays;
 
-public class ArrayVariableAssignments
-{
+public class ArrayVariableAssignments {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Case 1: Element level promotions are not applicable at array level.
 		// Example, char element can be promoted to int type whereas char[]
 		// cannot be promoted to int[].
 
 		// Example
-		int[] a = { 10, 20, 30, 40 };
-		char[] ch = { 'a', 'b', 'c' };
+		int[] a = {10, 20, 30, 40};
+		char[] ch = {'a', 'b', 'c'};
 
 		int[] b = a;
 
@@ -36,7 +34,7 @@ public class ArrayVariableAssignments
 		// parent class type array
 
 		// Example
-		String[] s = { "a", "b", "c" };
+		String[] s = {"a", "b", "c"};
 		Object[] obj = s;
 		System.out.println(obj[0]);
 
@@ -45,8 +43,8 @@ public class ArrayVariableAssignments
 		// Refer: ArrayReferenceVariableAssignment.PNG
 
 		// Example:
-		int[] c = { 10, 20, 30, 40 };
-		int[] d = { 50, 60 };
+		int[] c = {10, 20, 30, 40};
+		int[] d = {50, 60};
 
 		d = c;
 		System.out.println(d.length); // Output: 4

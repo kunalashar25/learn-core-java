@@ -2,14 +2,12 @@ package com.java.accessModifiers.publicPack2;
 
 //import com.java.accessModifiers.publicPack1.PublicMember1;
 
-public class PublicMember2
-{
+public class PublicMember2 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/*
 		 * PublicMember1 m1 = new PublicMember1(); m1.method1();
-		 * 
+		 *
 		 * CE: publicPack1.PublicMember1 is not public in publicPack1; cannot be accessed from outside package
 		 */
 

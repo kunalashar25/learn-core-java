@@ -1,13 +1,11 @@
 package com.java.accessModifiers.abstractPack;
 
-public abstract class AbstractClass
-{
+public abstract class AbstractClass {
 
 	// For any java class, if we're not allowed to create an object (because of partial implementation of methods), such
 	// type of class we have to declare with abstract modifier i.e. for abstract classes instantiation is not possible.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// AbstractClass ac = new AbstractClass(); CE:AbstractClass is abstract; cannot be instantiated
 	}
 
@@ -31,8 +29,7 @@ public abstract class AbstractClass
 
 // Examples:
 
-class P
-{
+class P {
 	// public void m1(); CE: missing method body, or declare abstract
 
 	// public abstract void m1(){} CE: abstract method cannot have a body
@@ -44,8 +41,7 @@ class P
 // implementation otherwise we've to declare child class as abstract. In this case, next level child class is
 // responsible to provide implementation.
 
-abstract class A
-{
+abstract class A {
 	public abstract void m1();
 
 	public abstract void m2();
@@ -53,11 +49,13 @@ abstract class A
 
 /*
  * class B extends A { public void m1() { }
- * 
+ *
  * CE: B is not abstract and does not override abstract method m2() in A }
  */
 
-/** final v/s abstract **/
+/**
+ * final v/s abstract
+ **/
 // 1. Abstract methods we should override compulsory in child classes to provide implementation where as we can't
 // override final methods. Hence, final abstract combination is illegal combination for methods.
 

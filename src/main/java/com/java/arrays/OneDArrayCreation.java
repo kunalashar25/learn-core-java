@@ -1,9 +1,7 @@
 package com.java.arrays;
 
-public class OneDArrayCreation
-{
-	public static void main(String[] args)
-	{
+public class OneDArrayCreation {
+	public static void main(String[] args) {
 		// every array in java is an Object. Hence, we can create arrays by
 		// using new operator.
 		int[] a = new int[3];
@@ -68,10 +66,10 @@ public class OneDArrayCreation
 		// 2147483647
 
 		int[] j = new int[2147483647]; // valid. We may get runtime exception
-										// for java.lang.OutOfMemoryError:
-										// Requested array size exceeds VM limit
-										// if sufficient heap memory is not
-										// available
+		// for java.lang.OutOfMemoryError:
+		// Requested array size exceeds VM limit
+		// if sufficient heap memory is not
+		// available
 
 		// int[] j1 = new int[2147483648]; CE: integer number too large
 	}

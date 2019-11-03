@@ -11,29 +11,24 @@ package com.java.flowControl.staticControlFlow;
 // Steps 7 to 12 from image falls under Step 2 from above sequence.
 // Steps 13 to 15 from image falls under Step 3 from above sequence.
 
-public class StaticClassIntroduction
-{
+public class StaticClassIntroduction {
 	static int i = 10;
 
-	static
-	{
+	static {
 		m1();
 		System.out.println("First Static Block");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		m1();
 		System.out.println("Main Method");
 	}
 
-	public static void m1()
-	{
+	public static void m1() {
 		System.out.println(j);
 	}
 
-	static
-	{
+	static {
 		System.out.println("Second Static Block");
 	}
 
@@ -48,7 +43,9 @@ public class StaticClassIntroduction
 // 20
 // Main Method
 
-/** Direct Read and Indirect Read **/
+/**
+ * Direct Read and Indirect Read
+ **/
 // 1. Inside a static block if we're trying to read a variable that read operation is called, Direct Read. If we're
 // calling a method and within that method if we're trying to read a variable that read operation is called Indirect
 // Read.

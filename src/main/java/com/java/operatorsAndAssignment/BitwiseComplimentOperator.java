@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class BitwiseComplimentOperator
-{
+public class BitwiseComplimentOperator {
 	// Symbol: ~
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		/** Applicable only for integral and not for boolean type **/
 

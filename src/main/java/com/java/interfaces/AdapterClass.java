@@ -4,8 +4,7 @@ package com.java.interfaces;
 // implementation are empty, this class is of no use to the programmer and hence we should restrict programmer to create object of this
 // class. This can be achieved by declaring class as abstract.
 
-interface ListMethods
-{
+interface ListMethods {
 	public void method1();
 
 	public void method2();
@@ -13,20 +12,16 @@ interface ListMethods
 	public void method3();
 }
 
-public abstract class AdapterClass implements ListMethods
-{
-	public void method1()
-	{
+public abstract class AdapterClass implements ListMethods {
+	public void method1() {
 
 	}
 
-	public void method2()
-	{
+	public void method2() {
 
 	}
 
-	public void method3()
-	{
+	public void method3() {
 
 	}
 }
@@ -35,20 +30,16 @@ public abstract class AdapterClass implements ListMethods
 // whether it is required or not. The problem in this approach is it increases length of the code and reduces
 // readability. We can solve this problem by using adapter classes
 
-class Test implements ListMethods
-{
-	public void method1()
-	{
+class Test implements ListMethods {
+	public void method1() {
 		System.out.println("This is method1 from Test Class");
 	}
 
-	public void method2()
-	{
+	public void method2() {
 
 	}
 
-	public void method3()
-	{
+	public void method3() {
 
 	}
 }
@@ -56,18 +47,14 @@ class Test implements ListMethods
 // 3. Instead of implementing interface, if we extend adapter class, we have to provide implementation only for required
 // methods and we're not responsible to provide implementation for each and every method of that interface so that
 // length of the code will be reduced.
-class Impl1 extends AdapterClass
-{
-	public void method3()
-	{
+class Impl1 extends AdapterClass {
+	public void method3() {
 		System.out.println("This is method 3");
 	}
 }
 
-class Impl2 extends AdapterClass
-{
-	public void method2()
-	{
+class Impl2 extends AdapterClass {
+	public void method2() {
 		System.out.println("This is method 2");
 	}
 }

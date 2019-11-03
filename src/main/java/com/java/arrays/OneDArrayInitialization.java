@@ -1,16 +1,14 @@
 package com.java.arrays;
 
-public class OneDArrayInitialization
-{
+public class OneDArrayInitialization {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// once we create an array, every element is initialized with default
 		// values i.e. 0
 		int[] x = new int[3];
 
 		System.out.println(x); // it return className @ hashCode in hexaDecimal
-								// form. Output: [I@15db9742
+		// form. Output: [I@15db9742
 
 		System.out.println(x[0]); // default value will be returned i.e. 0
 

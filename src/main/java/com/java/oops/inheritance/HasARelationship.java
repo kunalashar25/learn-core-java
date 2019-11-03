@@ -1,7 +1,6 @@
 package com.java.oops.inheritance;
 
-public class HasARelationship
-{
+public class HasARelationship {
 	// 1. Has-A Relationship is also known as Composition or Aggregation.
 
 	// 2. There is not specific keyword to implement Has-A relation but most of the times we're dependent on new
@@ -11,21 +10,20 @@ public class HasARelationship
 }
 
 // Example
-class Car
-{
-	public static void main(String[] args)
-	{
+class Car {
+	public static void main(String[] args) {
 		Engine e = new Engine();
 		// Class car Has-A Engine reference.
 	}
 }
 
-class Engine
-{
+class Engine {
 
 }
 
-/** Difference between Composition and Aggregation **/
+/**
+ * Difference between Composition and Aggregation  Is-A vs Has-A
+ **/
 // 1. Without existing container object, if there is no chance of existing contained objects then container and
 // contained objects are strongly associated and this strong association is nothing but composition.
 

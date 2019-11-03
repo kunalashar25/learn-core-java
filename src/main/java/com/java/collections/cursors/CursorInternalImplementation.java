@@ -5,8 +5,7 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Vector;
 
-public class CursorInternalImplementation
-{
+public class CursorInternalImplementation {
 	// 1. Enumeration, Iterator and ListIterator are interface, how can we create object of an interface?
 
 	// 2. Below statements doesn't create interface objects. They create interface implemented class object.
@@ -22,8 +21,7 @@ public class CursorInternalImplementation
 	// 6. Example: java.util.Vector$ListItr, ListIterator interface implemented class name is ListItr and ListItr is
 	// present inside Vector class.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Vector v = new Vector<>();
 		Enumeration e = v.elements();
 		System.out.println(e.getClass().getName()); // Output: java.util.Vector$1

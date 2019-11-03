@@ -2,8 +2,7 @@ package com.java.operatorsAndAssignment;
 
 public class StringConcatenationOperator // (+)
 {
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// The only overloaded operator in java is + operator. Sometime it acts as Arithmetic Operator and Sometime it
 		// acts as String Concatenation Operator.
 

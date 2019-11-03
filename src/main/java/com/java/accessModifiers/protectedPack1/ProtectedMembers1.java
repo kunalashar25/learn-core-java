@@ -1,7 +1,6 @@
 package com.java.accessModifiers.protectedPack1;
 
-public class ProtectedMembers1
-{
+public class ProtectedMembers1 {
 	// The most misunderstood modifier in java.
 
 	// if a member declared as protected then we can access that member anywhere with-in the current package but only in
@@ -18,8 +17,7 @@ public class ProtectedMembers1
 	// We can access protected members from outside package only in child classes and we should use that child class
 	// reference only.
 
-	protected void method1()
-	{
+	protected void method1() {
 		System.out.println("This is method1 from accessModifiers.protectedPack");
 	}
 

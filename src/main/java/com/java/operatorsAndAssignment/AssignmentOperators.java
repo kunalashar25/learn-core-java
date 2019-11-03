@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class AssignmentOperators
-{
+public class AssignmentOperators {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// There are 3 types of Assignment Operators
 		// 1. Simple Assignment Operator
 		// 2. Chain Assignment Operator

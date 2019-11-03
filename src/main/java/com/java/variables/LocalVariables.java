@@ -1,9 +1,7 @@
 package com.java.variables;
 
-public class LocalVariables
-{
-	public static void main(String[] args)
-	{
+public class LocalVariables {
+	public static void main(String[] args) {
 		// Sometimes to meet temporary requirements of a programmer we can declare variables inside a
 		// method/block/constructor, such type of variables are called local/temporary/stack/automatic variables.
 
@@ -15,20 +13,16 @@ public class LocalVariables
 
 		// Example 1
 		int i = 0;
-		for (int j = 0; j <= 3; j++)
-		{
+		for (int j = 0; j <= 3; j++) {
 			i = i + j;
 		}
 		// System.out.println("i= "+i+" j="+j); CE: j cannot be resolved to a variable
 		// as scope of j is limited only to for loop we cannot access it outside for loop
 
 		// Example 2
-		try
-		{
+		try {
 			int j = Integer.parseInt("ten"); // Number format exception
-		}
-		catch (NumberFormatException e)
-		{
+		} catch (NumberFormatException e) {
 			// j = 10; CE: as scope of j is limited only to try block we cannot access it outside try.
 			System.out.println(e);
 		}
@@ -46,8 +40,7 @@ public class LocalVariables
 		// is no guarantee for the execution of these blocks always at runtime.
 
 		// Example
-		if (args.length > 0)
-		{
+		if (args.length > 0) {
 			p = 10;
 		}
 		// System.out.println(p); CE: The local variable p may not have been initialized as args.length can be 0.

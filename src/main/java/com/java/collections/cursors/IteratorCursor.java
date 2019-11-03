@@ -3,8 +3,7 @@ package com.java.collections.cursors;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class IteratorCursor
-{
+public class IteratorCursor {
 	// 1. We can apply Iterator concept for any collection object and hence, it is universal cursor.
 
 	// 2. By using Iterator, we can perform both read and remove operations.
@@ -14,19 +13,18 @@ public class IteratorCursor
 
 	// Example: Iterator itr = c.iterator(); >> c is any collection object.
 
-	/** Methods **/
+	/**
+	 * Methods
+	 **/
 	// 1. public boolean hasNext();
 
 	// 2. public Object next();
 
 	// 3. public void remove();
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		ArrayList l = new ArrayList<>();
 
-		for (int i = 0; i <= 10; i++)
-		{
+		for (int i = 0; i <= 10; i++) {
 			l.add(i);
 		}
 
@@ -36,16 +34,12 @@ public class IteratorCursor
 
 		System.out.println(itr.getClass().getName()); // Output: java.util.ArrayList$Itr 
 
-		while (itr.hasNext())
-		{
+		while (itr.hasNext()) {
 			Integer i = (Integer) itr.next();
 
-			if (i % 2 == 0)
-			{
+			if (i % 2 == 0) {
 				System.out.println(i);
-			}
-			else
-			{
+			} else {
 				itr.remove();
 			}
 		}

@@ -1,19 +1,16 @@
 package com.java.abstractClass.loopHoles;
 
-public class New_Vs_Constructor
-{
+public class New_Vs_Constructor {
 
-	String	name;
-	int		rollNo;
+	String name;
+	int rollNo;
 
-	public New_Vs_Constructor(String name, int rollNo)
-	{
+	public New_Vs_Constructor(String name, int rollNo) {
 		this.name = name;
 		this.rollNo = rollNo;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		New_Vs_Constructor a = new New_Vs_Constructor("Java", 10);
 
 	}

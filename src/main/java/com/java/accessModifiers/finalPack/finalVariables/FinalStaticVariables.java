@@ -1,7 +1,6 @@
 package com.java.accessModifiers.finalPack.finalVariables;
 
-public class FinalStaticVariables
-{
+public class FinalStaticVariables {
 	// 1. If the value of a variable is not varied from object to object then such types of variables are not
 	// recommended to declare as instance variables. We have to declare those variables at class level by using static
 	// modifier.
@@ -14,8 +13,7 @@ public class FinalStaticVariables
 
 	static int x;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		System.out.println(x); // Output: 0
 	}
 
@@ -24,18 +22,19 @@ public class FinalStaticVariables
 
 	// final static int y; CE: variable y might not have been initialized
 
-	/** Rule for initializing final static variable **/
+	/**
+	 * Rule for initializing final static variable
+	 **/
 	// For final static variables, compulsory we should perform initialization before class loading completion i.e. the
 	// following are various places for initialization:
 
 	// 1. At the time of declaration
-	final static int	a	= 10;
+	final static int a = 10;
 
 	// 2. Inside static block
-	final static int	b;
+	final static int b;
 
-	static
-	{
+	static {
 		b = 20;
 	}
 
@@ -44,7 +43,7 @@ public class FinalStaticVariables
 
 	/*
 	 * final static int c;
-	 * 
+	 *
 	 * public static void c() { c=30; CE: cannot assign a value to final variable c. }
 	 */
 

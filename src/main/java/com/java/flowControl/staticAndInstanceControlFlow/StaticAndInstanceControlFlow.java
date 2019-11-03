@@ -1,31 +1,26 @@
 package com.java.flowControl.staticAndInstanceControlFlow;
 
-public class StaticAndInstanceControlFlow
-{
+public class StaticAndInstanceControlFlow {
 	{
 		System.out.println("First Instance Block");
 	}
 
-	static
-	{
+	static {
 		System.out.println("First Static Block");
 	}
 
-	public StaticAndInstanceControlFlow()
-	{
+	public StaticAndInstanceControlFlow() {
 		System.out.println("Constructor");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		StaticAndInstanceControlFlow s1 = new StaticAndInstanceControlFlow();
 		System.out.println("Main");
 
 		StaticAndInstanceControlFlow s2 = new StaticAndInstanceControlFlow();
 	}
 
-	static
-	{
+	static {
 		System.out.println("Second Static Block");
 	}
 

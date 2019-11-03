@@ -1,10 +1,8 @@
 package com.java.codeSnippets.literals;
 
-public class Snippet05
-{
+public class Snippet05 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		char ch1 = 'a';
 		char ch2 = 'J';
 		char ch3 = '5';

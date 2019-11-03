@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class ConditionalOperator
-{
+public class ConditionalOperator {
 	// Symbol ? :
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// The only possible ternary operator in java is Conditional Operator.
 
 		// Example:

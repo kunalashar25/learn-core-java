@@ -1,15 +1,13 @@
 package com.java.flowControl.staticControlFlow;
 
-public class StaticBlockIntroduction
-{
+public class StaticBlockIntroduction {
 
 	// 1. Static blocks will be executed at the time of class loading. Hence, at the time of class loading if we want to
 	// perform any activity we have to define that inside static block.
 
 	// Example 1: At the time of java class loading the corresponding native libraries should be loaded. Hence, we have
 	// to define this activity inside static block
-	static
-	{
+	static {
 		System.loadLibrary("native library path");
 	}
 

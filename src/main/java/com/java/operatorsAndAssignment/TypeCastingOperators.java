@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class TypeCastingOperators
-{
+public class TypeCastingOperators {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// There are two types of types casting, 1. Implicit type casting 2. Explicit type casting.
 
 		/** Implicit Type Casting **/
@@ -58,7 +56,7 @@ public class TypeCastingOperators
 		int a1 = -150;
 		byte b1 = (byte) a1;
 		System.out.println(b1); // Output: 106 as most significant bit was negative in first compliment and we were
-								// passing negative value, so it'll be converted to positive. Hence answer is 106.
+		// passing negative value, so it'll be converted to positive. Hence answer is 106.
 
 		// If we assign floating point values to the integral types by explicit type casting, the digits after decimal
 		// point will be lost

@@ -1,7 +1,6 @@
 package com.java.flowControl.staticControlFlow;
 
-public class StaticControlFlow_ParentToChild
-{
+public class StaticControlFlow_ParentToChild {
 	// Whenever we're executing child class the following sequence of events will be executed automatically as a part of
 	// static control flow.
 
@@ -17,49 +16,41 @@ public class StaticControlFlow_ParentToChild
 
 	static int i = 10;
 
-	static
-	{
+	static {
 		m1();
 		System.out.println("Base Static Block");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		m1();
 		System.out.println("Main Method");
 	}
 
-	public static void m1()
-	{
+	public static void m1() {
 		System.out.println(j);
 	}
 
 	static int j = 20;
 }
 
-class Derived extends StaticControlFlow_ParentToChild
-{
+class Derived extends StaticControlFlow_ParentToChild {
 	static int x = 100;
 
-	static
-	{
+	static {
 		m2();
 		System.out.println("Derived First Static Block");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		m2();
 		System.out.println("Derived Main");
 	}
 
-	public static void m2()
-	{
+	public static void m2() {
 		System.out.println(y);
 	}
 
-	static
-	{
+	static {
 		System.out.println("Derived Second Static Block");
 	}
 

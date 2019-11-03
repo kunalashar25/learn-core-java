@@ -1,15 +1,13 @@
 package com.java.variables;
 
-public class InstanceVariables
-{
-	int		x	= 10;
-	int		i;
-	double	d;
-	boolean	b;
-	String	s;
+public class InstanceVariables {
+	int x = 10;
+	int i;
+	double d;
+	boolean b;
+	String s;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// If the value of a variable is varied from object to object, such type of
 		// variables are called instance variables.
 
@@ -52,8 +50,7 @@ public class InstanceVariables
 
 	}
 
-	public void instanceAreaMethod()
-	{
+	public void instanceAreaMethod() {
 		System.out.println("From Instance Area: " + x);
 	}
 

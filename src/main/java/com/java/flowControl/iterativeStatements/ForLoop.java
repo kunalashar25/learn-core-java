@@ -1,10 +1,8 @@
 package com.java.flowControl.iterativeStatements;
 
-public class ForLoop
-{
+public class ForLoop {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// 1. For loop is the most commonly used loop in java
 
 		// 2. If we know number of iterations in advance, then for loop is the best choice.
@@ -59,8 +57,7 @@ public class ForLoop
 
 		// Example
 		int i = 0;
-		for (System.out.println("Initialization"); i < 3; i++)
-		{
+		for (System.out.println("Initialization"); i < 3; i++) {
 			System.out.println("body");
 		}
 
@@ -85,8 +82,7 @@ public class ForLoop
 
 		// Example
 		int k = 0;
-		for (System.out.println("Initialization"); k < 3; System.out.println("increment"))
-		{
+		for (System.out.println("Initialization"); k < 3; System.out.println("increment")) {
 			k++;
 		}
 		// Output:

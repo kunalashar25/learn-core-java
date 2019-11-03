@@ -1,11 +1,9 @@
 package com.java.flowControl.staticControlFlow;
 
-public class StaticClassExample1
-{
-	static int x=10;
-	
-	static
-	{
+public class StaticClassExample1 {
+	static int x = 10;
+
+	static {
 		System.out.println(x);
 	}
 }

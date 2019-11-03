@@ -1,7 +1,6 @@
 package com.java.oops.overriding;
 
-public class OverridingRules
-{
+public class OverridingRules {
 
 }
 
@@ -10,28 +9,22 @@ public class OverridingRules
 // 2. In Overriding, return types must be same but this rule is applicable until 1.4v only. From 1.5v onwards, we
 // can take covarient return types. According to this, child class method return type need not be same as parent
 // method return type. Its child type also allowed.
-class Parent1
-{
-	public Object mehtod1()
-	{
+class Parent1 {
+	public Object mehtod1() {
 		return null;
 	}
 
-	private void m1()
-	{
+	private void m1() {
 		System.out.println("m1 from parent");
 	}
 }
 
-class Child extends Parent1
-{
-	public String method1()
-	{
+class Child extends Parent1 {
+	public String method1() {
 		return null;
 	}
 
-	private void m1()
-	{
+	private void m1() {
 		System.out.println("m1 from child");
 	}
 }
@@ -39,10 +32,13 @@ class Child extends Parent1
 // 3. Covarient return type concept applicable only for Object types but not for primitive types.
 
 // Consider below example:
-/** Valid Examples **/
+/**
+ * Valid Examples
+ **/
 
 // Parent class return type: Object > Child class return type: Object or String or StringBuffer
 // Parent class return type: Number > Child class return type: Number or Integer or Float
+
 /** Invalid Examples **/
 // Parent class return type: String > Child class return type: Object
 // Parent class return type: double > Child class return type: int
@@ -58,15 +54,12 @@ class Child extends Parent1
 
 // 7. Parent class abstract methods we should override in child class to provide implementation.
 
-abstract class P
-{
+abstract class P {
 	public abstract void m1();
 }
 
-class C extends P
-{
-	public void m1()
-	{
+class C extends P {
+	public void m1() {
 		System.out.println("abstract method m1 implementation");
 	}
 }
@@ -74,15 +67,12 @@ class C extends P
 // 8. We can override non-abstract method as abstract. The main advantage of this approach is, we can stop the
 // availability of parent method implementation to the next level child classes.
 
-class A
-{
-	public void m1()
-	{
+class A {
+	public void m1() {
 
 	}
 }
 
-abstract class B extends A
-{
+abstract class B extends A {
 	public abstract void m1();
 }

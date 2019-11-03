@@ -1,20 +1,17 @@
 package com.java.abstractClass.loopHoles;
 
-public class ChildObject_vs_ParentConstructor extends Person
-{
-	int	rollNo;
-	int	marks;
+public class ChildObject_vs_ParentConstructor extends Person {
+	int rollNo;
+	int marks;
 
-	public ChildObject_vs_ParentConstructor(String name, int age, int rollNo, int marks)
-	{
+	public ChildObject_vs_ParentConstructor(String name, int age, int rollNo, int marks) {
 		super(name, age);
 		this.rollNo = rollNo;
 		this.marks = marks;
 		System.out.println(this.hashCode()); // Output: 366712642
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		ChildObject_vs_ParentConstructor c = new ChildObject_vs_ParentConstructor("Java", 8, 101, 456);
 		System.out.println(c.hashCode()); // Output: 366712642
 
@@ -22,13 +19,11 @@ public class ChildObject_vs_ParentConstructor extends Person
 
 }
 
-class Person
-{
-	String	name;
-	int		age;
+class Person {
+	String name;
+	int age;
 
-	public Person(String name, int age)
-	{
+	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
 		System.out.println(this.hashCode()); // Output: 366712642

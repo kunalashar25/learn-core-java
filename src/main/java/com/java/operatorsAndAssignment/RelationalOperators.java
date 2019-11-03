@@ -1,11 +1,9 @@
 package com.java.operatorsAndAssignment;
 
-public class RelationalOperators
-{
+public class RelationalOperators {
 	// < , <= , > , >=
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/** We can apply relational operators for every primitive type except boolean. **/
 
 		System.out.println(10 < 20); // Output: true

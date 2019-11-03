@@ -1,7 +1,6 @@
 package com.java.oops.coupling;
 
-public class CouplingIntroduction
-{
+public class CouplingIntroduction {
 	// 1. The degree of dependency between the components is called coupling.
 
 	// 2. If dependency is more, then it is considered as tightly coupling and if dependency is less, than it is
@@ -9,25 +8,20 @@ public class CouplingIntroduction
 }
 
 // Tightly Coupling Example:
-class A
-{
+class A {
 	static int i = B.j;
 }
 
-class B
-{
+class B {
 	static int j = C.k;
 }
 
-class C
-{
+class C {
 	static int k = D.m1();
 }
 
-class D
-{
-	public static int m1()
-	{
+class D {
+	public static int m1() {
 		return 10;
 	}
 }

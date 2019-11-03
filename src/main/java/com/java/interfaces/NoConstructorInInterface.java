@@ -1,7 +1,6 @@
 package com.java.interfaces;
 
-public interface NoConstructorInInterface
-{
+public interface NoConstructorInInterface {
 
 	// Q. We can't create object for Abstract class and Interface but abstract class can contain constructor but
 	// interface doesn't, WHY?

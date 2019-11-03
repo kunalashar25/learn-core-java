@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class ArithmeticOperators
-{
+public class ArithmeticOperators {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		// ArithmeticOperators are +, -, *, /, %
 

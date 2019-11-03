@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class ArrayElementAssignments
-{
+public class ArrayElementAssignments {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Case 1: In case of primitive type arrays, as array elements we can
 		// provide any type which can be implicitly promoted to declared type.
 

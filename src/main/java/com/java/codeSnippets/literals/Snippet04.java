@@ -1,10 +1,8 @@
 package com.java.codeSnippets.literals;
 
-public class Snippet04
-{
+public class Snippet04 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		boolean True = false;
 		boolean b = True;
 

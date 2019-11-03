@@ -1,7 +1,6 @@
 package com.java.oops.constructor.defaultConstructor;
 
-public class DefaultConstructor
-{
+public class DefaultConstructor {
 	// 1. Compiler is responsible to generate default constructor (but not JVM).
 
 	// 2. If we're not writing any constructor then only compiler will generate default constructor i.e. if we're
@@ -25,7 +24,9 @@ public class DefaultConstructor
 
 	// 5. super() is used to call parent class constructor. this() is used to call another constructor of a same class.
 
-	/** Note **/
+	/**
+	 * Note
+	 **/
 	// Case 1: We can take super() or this() only in first line of constructor. If we're trying to take anywhere else
 	// we'll get compile time error.
 
@@ -33,8 +34,7 @@ public class DefaultConstructor
 	// constructor directly from another constructor only.
 
 	// Example for Case 1 and Case 2:
-	public DefaultConstructor()
-	{
+	public DefaultConstructor() {
 		System.out.println("Cases");
 		super(); // CE: call to super() must be first statement in constructor.
 		this(); // CE: call to this() must be first statement in constructor.
@@ -44,12 +44,11 @@ public class DefaultConstructor
 	// we'll get compile time error.
 
 	// Example:
-	public void m1()
-	{
+	public void m1() {
 		super(); // CE: call to super() must be first statement in constructor.
 		System.out.println("Case 3");
 	}
-	
+
 	// Refer superAndThis_Method_vs_Keyword.PNG to know difference between super()/super and this()/this.
 
 }

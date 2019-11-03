@@ -1,14 +1,11 @@
 package com.java.operatorsAndAssignment;
 
-public class NewOperator
-{
-	public NewOperator()
-	{
+public class NewOperator {
+	public NewOperator() {
 		System.out.println("NewOperator constructor called");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// New Operator is used to create a object.
 
 		// Constructor of NewOperator class will be called as soon as it encounters new keyword.

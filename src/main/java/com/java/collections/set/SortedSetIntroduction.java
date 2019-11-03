@@ -1,7 +1,6 @@
 package com.java.collections.set;
 
-public class SortedSetIntroduction
-{
+public class SortedSetIntroduction {
 	// 1. SortedSet is the child interface of Set.
 
 	// 2. If we want to represent a group of individual objects according to some sorting order without duplicates then

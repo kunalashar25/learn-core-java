@@ -3,8 +3,7 @@ package com.java.functionalInterface;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class FunctionFI
-{
+public class FunctionFI {
 	// 1. Used when User is expecting an output from an given operation. Predicate returns boolean by default.
 	// Functional Interface is used to return any type of values.
 
@@ -18,8 +17,7 @@ public class FunctionFI
 	// i. f1.andThen(f2).apply(i) >> First f1 is applied and then f2 is applied.
 	// ii. f1.compose(f2).apply(i) >> First f2 is applied and then f1 is applied.
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Example 1
 		Function<Integer, Integer> f1 = i -> i * i;
 		System.out.println(f1.apply(10)); // Output: 100
@@ -39,15 +37,11 @@ public class FunctionFI
 		{
 			int marks = s.marks;
 			String grade = "";
-			if (marks >= 80)
-			{
+			if (marks >= 80) {
 				grade = "Distinction";
-			}
-			else if (marks >= 50)
-			{
+			} else if (marks >= 50) {
 				grade = "Pass";
-			}
-			else
+			} else
 				grade = "Fail";
 
 			return grade;
@@ -55,11 +49,9 @@ public class FunctionFI
 
 		Predicate<Student> p1 = m -> m.marks >= 60;
 
-		Student[] s = { new Student("ABC", 65), new Student("PQR", 92), new Student("LMN", 22) };
-		for (Student s1 : s)
-		{
-			if (p1.test(s1))
-			{
+		Student[] s = {new Student("ABC", 65), new Student("PQR", 92), new Student("LMN", 22)};
+		for (Student s1 : s) {
+			if (p1.test(s1)) {
 				System.out.println("Student name : " + s1.name + " | Grade : " + f4.apply(s1));
 			}
 		}
@@ -76,13 +68,11 @@ public class FunctionFI
 	}
 }
 
-class Student
-{
-	String	name;
-	int		marks;
+class Student {
+	String name;
+	int marks;
 
-	public Student(String name, int marks)
-	{
+	public Student(String name, int marks) {
 		this.name = name;
 		this.marks = marks;
 	}

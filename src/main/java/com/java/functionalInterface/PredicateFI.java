@@ -3,15 +3,13 @@ package com.java.functionalInterface;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
-public class PredicateFI
-{
+public class PredicateFI {
 	// 1. Predicate interface is used to perform conditional checks.
 
 	// 2. It contains only one abstract method and always returns boolean.
 	// public abstract boolean test(T t)
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Example 1
 		Predicate<Integer> p1 = i -> i % 2 == 0;
 		System.out.println(p1.test(10)); // Output: true
@@ -23,11 +21,9 @@ public class PredicateFI
 		System.out.println(p2.test("HelloWorld")); // Output: true
 
 		// Example 3
-		String[] str = { "hi", "Hello", "Welcome", "Testing" };
-		for (String s : str)
-		{
-			if (p2.test(s))
-			{
+		String[] str = {"hi", "Hello", "Welcome", "Testing"};
+		for (String s : str) {
+			if (p2.test(s)) {
 				System.out.println(s);
 			}
 		}
@@ -44,10 +40,8 @@ public class PredicateFI
 
 		Predicate<Employee> p3 = e -> e.salary > 25000;
 
-		for (Employee e : empList)
-		{
-			if (p3.test(e))
-			{
+		for (Employee e : empList) {
+			if (p3.test(e)) {
 				System.out.println(e.name);
 			}
 		}
@@ -56,15 +50,13 @@ public class PredicateFI
 		// Emp4
 
 		// Example 5: Predicate Joining
-		int[] x = { 0, 10, 15, 13, 78, 35, 62 };
+		int[] x = {0, 10, 15, 13, 78, 35, 62};
 		Predicate<Integer> p4 = i -> i % 2 == 0;
 		Predicate<Integer> p5 = i -> i > 30;
 
 		System.out.println("Even numbers greater than 30");
-		for (int i : x)
-		{
-			if (p4.and(p5).test(i))
-			{
+		for (int i : x) {
+			if (p4.and(p5).test(i)) {
 				System.out.println(i);
 			}
 		}
@@ -74,10 +66,8 @@ public class PredicateFI
 		// 62
 
 		System.out.println("Even numbers or number greater than 30");
-		for (int i : x)
-		{
-			if (p4.or(p5).test(i))
-			{
+		for (int i : x) {
+			if (p4.or(p5).test(i)) {
 				System.out.println(i);
 			}
 		}
@@ -90,10 +80,8 @@ public class PredicateFI
 		// 62
 
 		System.out.println("Negate p4 i.e. get odd numbers");
-		for (int i : x)
-		{
-			if (p4.negate().test(i))
-			{
+		for (int i : x) {
+			if (p4.negate().test(i)) {
 				System.out.println(i);
 			}
 		}
@@ -105,13 +93,11 @@ public class PredicateFI
 	}
 }
 
-class Employee
-{
-	String	name;
-	double	salary;
+class Employee {
+	String name;
+	double salary;
 
-	public Employee(String name, double salary)
-	{
+	public Employee(String name, double salary) {
 		this.name = name;
 		this.salary = salary;
 	}

@@ -2,8 +2,7 @@ package com.java.collections.list;
 
 import java.util.Vector;
 
-public class VectorIntroduction
-{
+public class VectorIntroduction {
 	// 1. The underlying data structure is Resizable array or Growable Array.
 
 	// 2. Duplicates are allowed.
@@ -32,7 +31,9 @@ public class VectorIntroduction
 	// 4. Vector v = new Vector(Collection c); creates any equivalent object for the given collection. This constructor
 	// is meant for inter-conversion between collection objects.
 
-	/** Vector Specific Methods **/
+	/**
+	 * Vector Specific Methods
+	 **/
 	// 1. To add objects:
 	// i. add (Object o) -> Collection Specific method
 	// ii. add(int index, Object o) -> List Specific method
@@ -56,24 +57,21 @@ public class VectorIntroduction
 	// i. int size() >> current size
 	// ii. int capacity() >> total capacity to hold elements
 	// iii. Enumeration elements()
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Vector v = new Vector<>();
 		System.out.println(v.capacity()); // Output: 10
 
 		// adding 10 elements 
-		for (int i = 1; i <= 10; i++)
-		{
+		for (int i = 1; i <= 10; i++) {
 			v.addElement(i);
 		}
-		
+
 		// verifying capacity
 		System.out.println(v.capacity()); // Output: 10
-		
+
 		// adding 11th element
 		v.addElement("A");
-		
+
 		// verifying capacity and size
 		System.out.println(v.capacity()); // Output: 20
 		System.out.println(v.size()); // Output: 11

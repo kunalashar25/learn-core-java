@@ -1,11 +1,9 @@
 package com.java.dataTypes.nonNumeric;
 
-public class Boolean
-{
+public class Boolean {
 	// Size: N\A
 	// Range: N\A
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// boolean b = 0; compile tile error: Type mismatch: cannot convert from
 		// int to boolean
 
@@ -24,7 +22,7 @@ public class Boolean
 		// compile time error. Type mismatch: Found int Required boolean
 		/*
 		 * while(1) { System.out.println("1"); }
-		 * 
+		 *
 		 * if(1) { System.out.println("1"); }
 		 */
 	}

@@ -1,7 +1,6 @@
 package com.java.accessModifiers.finalPack.finalVariables;
 
-public class FinalInstanceVariables
-{
+public class FinalInstanceVariables {
 	// 1. If value of a variable is varied from object to object then such type of variables are called instance
 	// variables.
 
@@ -12,8 +11,7 @@ public class FinalInstanceVariables
 
 	int x;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		FinalInstanceVariables fiv = new FinalInstanceVariables();
 		System.out.println(fiv.x); // Output: 0
 	}
@@ -23,16 +21,19 @@ public class FinalInstanceVariables
 
 	// final int y; CE: variable y might not have been initialized
 
-	/** Rule for initializing final instance variable **/
+	/**
+	 * Rule for initializing final instance variable
+	 **/
 
 	// For final instance variables, compulsory we should perform initialization before constructor completion i.e. the
 	// following are various places for initialization:
 
 	// 1. At the time of declaration
-	final int	a	= 10;
+	final int a = 10;
 
 	// 2. Inside instance block
-	final int	b;
+	final int b;
+
 	{
 		b = 20;
 	}
@@ -40,8 +41,7 @@ public class FinalInstanceVariables
 	// 3. Inside constructor
 	final int c;
 
-	public FinalInstanceVariables()
-	{
+	public FinalInstanceVariables() {
 		c = 30;
 	}
 
@@ -50,7 +50,7 @@ public class FinalInstanceVariables
 
 	/*
 	 * final int d;
-	 * 
+	 *
 	 * public void d() { d=40; CE: cannot assign a value to final variable d. }
 	 */
 

@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.customizedExceptions;
 
-public class CustomizedExceptions
-{
+public class CustomizedExceptions {
 	// 1. Sometimes to meet programming requirements we can define our own exceptions, Such type of exceptions are
 	// called, customized or user-defined exceptions.
 
@@ -10,20 +9,14 @@ public class CustomizedExceptions
 	// TooOldException
 	// InsufficientFundException
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int age = 18;
 
-		if (age < 18)
-		{
+		if (age < 18) {
 			throw new TooYoungException("too young");
-		}
-		else if (age > 60)
-		{
+		} else if (age > 60) {
 			throw new TooOldException("too old");
-		}
-		else
-		{
+		} else {
 			System.out.println("Your age is " + age);
 		}
 	}

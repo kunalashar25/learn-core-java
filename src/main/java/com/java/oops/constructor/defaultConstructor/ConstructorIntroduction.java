@@ -1,7 +1,6 @@
 package com.java.oops.constructor.defaultConstructor;
 
-public class ConstructorIntroduction
-{
+public class ConstructorIntroduction {
 	// 1. Once we create an object, compulsory we should perform initialization then only the object is in a position to
 	// respond properly.
 
@@ -9,17 +8,15 @@ public class ConstructorIntroduction
 	// of the object. This piece of code is nothing but constructor. Hence, the main purpose of constructor is to
 	// perform initialization of an object.
 
-	String	name;
-	int		rollNo;
+	String name;
+	int rollNo;
 
-	public ConstructorIntroduction(String name, int rollNo)
-	{
+	public ConstructorIntroduction(String name, int rollNo) {
 		this.name = name;
 		this.rollNo = rollNo;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		ConstructorIntroduction c1 = new ConstructorIntroduction("Name1", 1);
 		ConstructorIntroduction c2 = new ConstructorIntroduction("Name2", 2);
 

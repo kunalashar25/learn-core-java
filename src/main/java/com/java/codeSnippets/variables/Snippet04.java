@@ -1,10 +1,8 @@
 package com.java.codeSnippets.variables;
 
-public class Snippet04
-{
+public class Snippet04 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		String str;
 		str = "Java";
 		System.out.println(str); // Output: Java
@@ -12,5 +10,7 @@ public class Snippet04
 
 }
 
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // Example of declaring and initializing local variable on different lines.

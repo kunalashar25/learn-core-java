@@ -1,9 +1,7 @@
 package com.java.codeSnippets.variables;
 
-public class Snippet15
-{
-	public static void main(String[] args)
-	{
+public class Snippet15 {
+	public static void main(String[] args) {
 		int a = 10;
 		System.out.println(a); // Output: 10
 
@@ -12,5 +10,7 @@ public class Snippet15
 	}
 }
 
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // we can initialize same variable multiple times post declaration.

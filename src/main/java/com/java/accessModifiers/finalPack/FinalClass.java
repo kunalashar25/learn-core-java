@@ -1,14 +1,12 @@
 package com.java.accessModifiers.finalPack;
 
-final class FinalClass
-{
+final class FinalClass {
 	// if a class is declared as final, we can't extend functionality of that class i.e. inheritance is not possible for
 	// final classes.
 
 	static int x = 10;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		x = 100;
 		System.out.println(x); // Output: 100
 	}
@@ -17,7 +15,7 @@ final class FinalClass
 
 /*
  * class SubClass extends FinalClass {
- * 
+ *
  * }
  */
 

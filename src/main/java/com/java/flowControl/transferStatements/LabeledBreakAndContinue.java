@@ -1,18 +1,15 @@
 package com.java.flowControl.transferStatements;
 
-public class LabeledBreakAndContinue
-{
+public class LabeledBreakAndContinue {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// We can use labeled break and continue to break or continue a particular loop in nested loops
 
-		l1: for (int i = 0; i < 3; i++)
-		{
-			l2: for (int j = 0; j < i; j++)
-			{
-				for (int k = 0; k < j; k++)
-				{
+		l1:
+		for (int i = 0; i < 3; i++) {
+			l2:
+			for (int j = 0; j < i; j++) {
+				for (int k = 0; k < j; k++) {
 					System.out.println(k);
 					// break l1; to break out of l1 loop
 					// break l2; to break out of l2 loop
@@ -23,10 +20,9 @@ public class LabeledBreakAndContinue
 
 		// Example
 
-		k1: for (int i = 0; i < 3; i++)
-		{
-			for (int j = 0; j < 3; j++)
-			{
+		k1:
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
 				if (i == j)
 					break; // change keywords here
 				System.out.println("i= " + i + " j= " + j);

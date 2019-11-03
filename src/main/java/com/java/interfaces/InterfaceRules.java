@@ -1,30 +1,27 @@
 package com.java.interfaces;
 
-interface Inter
-{
+interface Inter {
 	void m1();
 
 	void m2();
 }
 
-abstract class InterfaceRules implements Inter
-{
+abstract class InterfaceRules implements Inter {
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("This is m1");
 	}
 }
 
-class ServiceProvider extends InterfaceRules
-{
-	public void m2()
-	{
+class ServiceProvider extends InterfaceRules {
+	public void m2() {
 		System.out.println("This is m2");
 	}
 }
 
-/** Rules **/
+/**
+ * Rules
+ **/
 
 // 1. Whenever we're implementing an interface, we have to provide implementation for each and every method of that
 // interface otherwise we have to declare class as abstract class. Then next level child class is responsible to
@@ -39,18 +36,15 @@ class ServiceProvider extends InterfaceRules
 
 // 2. An interface can extend any number of interfaces simultaneously.
 
-interface A
-{
+interface A {
 
 }
 
-interface B
-{
+interface B {
 
 }
 
-interface C extends A, B
-{
+interface C extends A, B {
 
 }
 
@@ -58,8 +52,7 @@ interface C extends A, B
 
 // 4. A class can extend another class and can implement any number of interfaces simultaneously.
 
-class D extends ServiceProvider implements A, B
-{
+class D extends ServiceProvider implements A, B {
 
 }
 

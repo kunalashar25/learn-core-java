@@ -2,11 +2,9 @@ package com.java.testCode.String;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class StringSplitOnPipeSeperator
-{
+public class StringSplitOnPipeSeperator {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// We cannot split string on | by using below method. We need to use
 		// StringUtils to achieve the same.
 

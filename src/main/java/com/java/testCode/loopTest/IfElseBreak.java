@@ -1,21 +1,15 @@
 package com.java.testCode.loopTest;
 
-public class IfElseBreak
-{
+public class IfElseBreak {
 
-	public static void main(String[] args)
-	{
-		String demo[] = { "Released", "leased", "leased", "leased", "leased" };
+	public static void main(String[] args) {
+		String demo[] = {"Released", "leased", "leased", "leased", "leased"};
 
-		for (int i = 0; i <= 4; i++)
-		{
-			if (demo[i].equalsIgnoreCase("Released"))
-			{
+		for (int i = 0; i <= 4; i++) {
+			if (demo[i].equalsIgnoreCase("Released")) {
 				System.out.println("breaking");
 				// break;
-			}
-			else
-			{
+			} else {
 
 				System.out.println("printing");
 			}

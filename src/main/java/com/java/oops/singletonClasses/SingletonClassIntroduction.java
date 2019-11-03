@@ -1,13 +1,14 @@
 package com.java.oops.singletonClasses;
 
-public class SingletonClassIntroduction
-{
+public class SingletonClassIntroduction {
 	// 1. For any Java class if we're allowed to create only one object then such type of class is called Singleton
 	// class.
 
 	// Example: Runtime, BusinessDeligate, ServiceLocator, etc
 
-	/** Advantage of Singleton Class **/
+	/**
+	 * Advantage of Singleton Class
+	 **/
 	// 1. If several people have same requirement then it is not recommended to create separate object for every
 	// requirement.
 
@@ -17,25 +18,25 @@ public class SingletonClassIntroduction
 	// 3. This is the central idea of Singleton classes.
 
 	// Example: Only one runtime object is created and and r1,r2,r3 are referring to the same object.
-	Runtime										r1	= Runtime.getRuntime();
-	Runtime										r2	= Runtime.getRuntime();
-	Runtime										r3	= Runtime.getRuntime();
+	Runtime r1 = Runtime.getRuntime();
+	Runtime r2 = Runtime.getRuntime();
+	Runtime r3 = Runtime.getRuntime();
 
-	/** How to create Singleton Classes? **/
+	/**
+	 * How to create Singleton Classes?
+	 **/
 
 	// We can create our own singleton classes for this we have to use private constructor and private static
 	// variable and public factory method.
 
 	// Approach 1
-	private static SingletonClassIntroduction	s1	= new SingletonClassIntroduction();
+	private static SingletonClassIntroduction s1 = new SingletonClassIntroduction();
 
-	private SingletonClassIntroduction()
-	{
+	private SingletonClassIntroduction() {
 
 	}
 
-	public static SingletonClassIntroduction getSingletonClass()
-	{
+	public static SingletonClassIntroduction getSingletonClass() {
 		return s1;
 	}
 
@@ -43,19 +44,15 @@ public class SingletonClassIntroduction
 }
 
 // Approach 2
-class Singleton
-{
+class Singleton {
 	private static Singleton s = null;
 
-	private Singleton()
-	{
+	private Singleton() {
 
 	}
 
-	public static Singleton getSingletonClass()
-	{
-		if (s == null)
-		{
+	public static Singleton getSingletonClass() {
+		if (s == null) {
 			s = new Singleton();
 		}
 		return s;
@@ -67,15 +64,12 @@ class Singleton
 // Q: Class is not final but we're not allowed to create child classes. How is it possible?
 // Ans: By declaring every constructor as private we can restrict child class creation.
 
-class Parent
-{
-	private Parent()
-	{
+class Parent {
+	private Parent() {
 
 	}
 }
 
-class Child extends Parent
-{
+class Child extends Parent {
 	// it is impossible to create child class for Parent class.
 }

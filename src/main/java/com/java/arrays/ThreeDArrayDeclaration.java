@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class ThreeDArrayDeclaration
-{
+public class ThreeDArrayDeclaration {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Valid combinations of 3D array
 		int[][][] a;
 		int[][][] b;

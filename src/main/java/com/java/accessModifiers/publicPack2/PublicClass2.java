@@ -2,11 +2,9 @@ package com.java.accessModifiers.publicPack2;
 
 import com.java.accessModifiers.publicPack1.PublicClass1;
 
-class PublicClass2
-{
+class PublicClass2 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		PublicClass1 c = new PublicClass1();
 		c.method1();
 	}

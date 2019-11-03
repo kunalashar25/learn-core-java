@@ -1,7 +1,6 @@
 package com.java.interfaces;
 
-public interface InterfaceIntroduction
-{
+public interface InterfaceIntroduction {
 	/** Introduction **/
 
 	// Definition 1: Any service requirement specification (SRS) is considered as an Interface.

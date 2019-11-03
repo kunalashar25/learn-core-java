@@ -1,7 +1,6 @@
 package com.java.interfaces;
 
-public interface InterfaceVariables
-{
+public interface InterfaceVariables {
 	// 1. An interface can contain variables. The main purpose of interface variables is to define requirement level
 	// constants.
 
@@ -48,19 +47,15 @@ public interface InterfaceVariables
 	// see below example
 }
 
-class child1 implements InterfaceVariables
-{
-	public static void main(String[] args)
-	{
+class child1 implements InterfaceVariables {
+	public static void main(String[] args) {
 		// x = 333; CE: cannot assign a value to final variable x
 		System.out.println(x); // Output: 10
 	}
 }
 
-class child2 implements InterfaceVariables
-{
-	public static void main(String[] args)
-	{
+class child2 implements InterfaceVariables {
+	public static void main(String[] args) {
 		int x = 333;
 		System.out.println(x); // Output: 333 as x is local variable of main method.
 	}

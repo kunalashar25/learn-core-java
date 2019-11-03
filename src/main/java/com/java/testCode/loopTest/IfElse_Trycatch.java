@@ -1,23 +1,17 @@
 package com.java.testCode.loopTest;
 
-public class IfElse_Trycatch
-{
+public class IfElse_Trycatch {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		System.out.println("before if");
 
-		if (true)
-		{
+		if (true) {
 			System.out.println("inside if");
 
-			try
-			{
+			try {
 				System.out.println("Inside try");
-			}
-			catch (Exception e)
-			{
+			} catch (Exception e) {
 				System.out.println("inside catch");
 			}
 		}

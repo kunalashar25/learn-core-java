@@ -1,7 +1,6 @@
 package com.java.oops.overriding;
 
-public class MethodHiding
-{
+public class MethodHiding {
 	// 1. All rules of method hiding are exactly same as overriding except the few differences.
 	// Refer: MethodHiding_vs_MehtodOverriding.PNG
 
@@ -11,8 +10,7 @@ public class MethodHiding
 	// child
 	// child
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		P4 p = new P4();
 		p.m1(); // Output: Parent
 
@@ -24,18 +22,14 @@ public class MethodHiding
 	}
 }
 
-class P4
-{
-	public static void m1()
-	{
+class P4 {
+	public static void m1() {
 		System.out.println("Parent");
 	}
 }
 
-class C4 extends P4
-{
-	public static void m1()
-	{
+class C4 extends P4 {
+	public static void m1() {
 		System.out.println("Child");
 	}
 }

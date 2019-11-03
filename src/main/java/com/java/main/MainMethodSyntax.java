@@ -1,7 +1,6 @@
 package com.java.main;
 
-public class MainMethodSyntax
-{
+public class MainMethodSyntax {
 	// Whether class contains main() or not and whether main() is declared according to requirement or not, these
 	// things won't be checked by compiler. At runtime, JVM is responsible to check these things.
 
@@ -10,8 +9,7 @@ public class MainMethodSyntax
 	// At Runtime, JVM always searches for the main() with the following prototype:
 	// public static void main(String[] args). this prototype is configured in JVM..
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// public: So JVM can call from anywhere.
 		// static: Without existing object also JVM has to call this method.
 		// void: main() wont return anything to JVM.

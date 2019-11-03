@@ -1,18 +1,13 @@
 package com.java.flowControl.selectionStatements;
 
-public class If_Else
-{
+public class If_Else {
 	static boolean b;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Syntax
-		if (b)
-		{
+		if (b) {
 			System.out.println(b);
-		}
-		else
-		{
+		} else {
 			System.out.println(b);
 		}
 
@@ -32,8 +27,7 @@ public class If_Else
 			;
 
 		// Example 3
-		if (true)
-		{
+		if (true) {
 			int a = 10;
 		}
 

@@ -1,14 +1,9 @@
 package com.java.collections.list;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.RandomAccess;
+import java.util.*;
 
-public class ArrayListIntroduction
-{
+public class ArrayListIntroduction {
 	// 1. The underlying data of array list structure is Resizable array or Growable Array.
 
 	// 2. Duplicates are allowed.
@@ -19,7 +14,7 @@ public class ArrayListIntroduction
 	// objects. Heterogeneous means different type of objects).
 
 	// 5. null insertion is possible.
-	
+
 	// 6. All elements are stored in consecutive memory location. Hence, retrieval is fast.
 
 	/** Constructors in ArrayList **/
@@ -43,9 +38,10 @@ public class ArrayListIntroduction
 
 	// ArrayList l3 = new ArrayList(Collection c);
 
-	/** Examples **/
-	public static void main(String[] args)
-	{
+	/**
+	 * Examples
+	 **/
+	public static void main(String[] args) {
 		// Example 1:
 		ArrayList l1 = new ArrayList();
 		l1.add("A");
@@ -74,8 +70,7 @@ public class ArrayListIntroduction
 	// 6. RandomAccess interface is present in java.util package and it doesn't contain any methods. It is a marker
 	// interface, where required ability will be provided automatically by the JVM.
 
-	public static void interviewQuestions()
-	{
+	public static void interviewQuestions() {
 		ArrayList l1 = new ArrayList<>();
 		LinkedList l2 = new LinkedList<>();
 
@@ -95,15 +90,16 @@ public class ArrayListIntroduction
 
 	// Refer Image ArrayList_vs_Vector.PNG for Differences between ArrayList and Vector.
 
-	/** How to get Synchronized version of ArrayList Object? **/
+	/**
+	 * How to get Synchronized version of ArrayList Object?
+	 **/
 	// By Default ArrayList is non-synchronized but we can get synchronized version of ArrayList object by using
 	// synchronizedList() method of Collections class.
 
 	// Method Signature: public static List synchronizedList(List l)
 
 	// Example
-	public void synchronizedListExample()
-	{
+	public void synchronizedListExample() {
 		ArrayList list = new ArrayList<>();
 		List l1 = Collections.synchronizedList(list);
 	}

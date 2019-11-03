@@ -1,7 +1,6 @@
 package com.java.collections.introduction;
 
-public class KeyInterfacesOfCollectionFramework
-{
+public class KeyInterfacesOfCollectionFramework {
 	// There are 9 key interfaces of collection framework.
 	// 1. Collection
 	// 2. List

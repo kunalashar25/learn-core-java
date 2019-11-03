@@ -1,12 +1,10 @@
 package com.java.dataTypes.integral;
 
-public class Byte
-{
+public class Byte {
 	// Size: 1 Bytes
 	// Range: -128 to 127
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		byte a = 30; // Output: 30
 		byte b = 60; // Output: 60
 		byte c = -80; // Output: -80

@@ -2,11 +2,9 @@ package com.java.accessModifiers.protectedPack2;
 
 import com.java.accessModifiers.protectedPack1.ProtectedMembers1;
 
-public class ProtectedMembers3 extends ProtectedMembers1
-{
+public class ProtectedMembers3 extends ProtectedMembers1 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		ProtectedMembers1 a = new ProtectedMembers1();
 		// a.method1();
 

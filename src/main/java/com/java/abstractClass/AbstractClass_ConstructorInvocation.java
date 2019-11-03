@@ -1,22 +1,17 @@
 package com.java.abstractClass;
 
-public class AbstractClass_ConstructorInvocation extends AbstractClass1
-{
-	public AbstractClass_ConstructorInvocation()
-	{
+public class AbstractClass_ConstructorInvocation extends AbstractClass1 {
+	public AbstractClass_ConstructorInvocation() {
 		System.out.println(this.hashCode()); // Output: 366712642
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		AbstractClass_ConstructorInvocation c = new AbstractClass_ConstructorInvocation();
 	}
 }
 
-abstract class AbstractClass1
-{
-	public AbstractClass1()
-	{
+abstract class AbstractClass1 {
+	public AbstractClass1() {
 		System.out.println(this.hashCode()); // Output: 366712642
 	}
 }
@@ -33,15 +28,12 @@ abstract class AbstractClass1
 // then it is highly recommended to go for interface.
 
 // Case 1: if we write it using abstract class:
-abstract class X
-{
+abstract class X {
 
 }
 
-class Test extends X
-{
-	public static void main(String[] args)
-	{
+class Test extends X {
+	public static void main(String[] args) {
 		Test t = new Test();
 	}
 }
@@ -51,15 +43,12 @@ class Test extends X
 
 // Case 2: if we write it using interface:
 
-interface A1
-{
+interface A1 {
 
 }
 
-class B implements A1
-{
-	public static void main(String[] args)
-	{
+class B implements A1 {
+	public static void main(String[] args) {
 		B b = new B();
 	}
 }

@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.introduction;
 
-public class Checked_vs_Unchecked_Exceptions
-{
+public class Checked_vs_Unchecked_Exceptions {
 	/** Checked Exception **/
 	// 1. The exceptions which are checked by compiler for smooth execution of the program are called Checked
 	// Exceptions.

@@ -1,10 +1,8 @@
 package com.java.operatorsAndAssignment;
 
-public class ShortCircuitOperators
-{
+public class ShortCircuitOperators {
 	// Symbol: &&, ||
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// These are exactly same as bitwise operators(&,|) except the differences specific in
 		// image: Bitwise_Vs_ShortCircuit_Operator.PNG
 
@@ -14,12 +12,9 @@ public class ShortCircuitOperators
 		// Example 1
 		int x = 10, y = 15;
 
-		if (++x < 10 && ++y > 15)
-		{
+		if (++x < 10 && ++y > 15) {
 			x++;
-		}
-		else
-		{
+		} else {
 			y++;
 		}
 		System.out.println("x is " + x + " y is " + y);
@@ -29,12 +24,9 @@ public class ShortCircuitOperators
 
 		int x1 = 10, y1 = 15;
 
-		if (++x1 < 10 || ++y1 > 15)
-		{
+		if (++x1 < 10 || ++y1 > 15) {
 			x1++;
-		}
-		else
-		{
+		} else {
 			y1++;
 		}
 		System.out.println("x is " + x1 + " y is " + y1);
@@ -45,12 +37,9 @@ public class ShortCircuitOperators
 		// Example 2
 		int a = 10;
 
-		if (++a < 10 && (a / 0 > 10))
-		{
+		if (++a < 10 && (a / 0 > 10)) {
 			System.out.println("hello");
-		}
-		else
-		{
+		} else {
 			System.out.println("Hi");
 		}
 
@@ -58,12 +47,9 @@ public class ShortCircuitOperators
 
 		int a1 = 10;
 
-		if (++a1 < 10 & (a1 / 0 > 10))
-		{
+		if (++a1 < 10 & (a1 / 0 > 10)) {
 			System.out.println("hello");
-		}
-		else
-		{
+		} else {
 			System.out.println("Hi");
 		}
 

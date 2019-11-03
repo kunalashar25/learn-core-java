@@ -1,11 +1,11 @@
 package com.java.arrays;
 
-public class LengthVariableVsLengthMethod
-{
-	/** length vs length() **/
+public class LengthVariableVsLengthMethod {
+	/**
+	 * length vs length()
+	 **/
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/* ========= Array ========= */
 
 		/** length **/
@@ -19,12 +19,12 @@ public class LengthVariableVsLengthMethod
 		// System.out.println(x.length()); CE: cannot find symbol. Symbol:
 		// method length() Location: class int[]
 
-		String[] s1 = { "a", "aa", "aaa" };
+		String[] s1 = {"a", "aa", "aaa"};
 		System.out.println(s1.length); // valid as it is referring to array
 		// System.out.println(s1.length()); CE: cannot find symbol.
 		// System.out.println(s1[0].length); CE: cannot find symbol.
 		System.out.println(s1[0].length()); // valid as it is referring to
-											// String
+		// String
 
 		/* ========= String ========= */
 

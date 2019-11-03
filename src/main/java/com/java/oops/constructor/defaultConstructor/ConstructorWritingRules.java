@@ -1,7 +1,6 @@
 package com.java.oops.constructor.defaultConstructor;
 
-public class ConstructorWritingRules
-{
+public class ConstructorWritingRules {
 	// 1. Name of the class and name of constructor must be same.
 
 	// 2. Return type concept not applicable for constructor, even void is not allowed.
@@ -15,8 +14,7 @@ public class ConstructorWritingRules
 		System.out.println(10);
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		ConstructorWritingRules c = new ConstructorWritingRules();
 		c.ConstructorWritingRules();
 	}

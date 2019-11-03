@@ -1,10 +1,8 @@
 package com.java.codeSnippets.variables;
 
-public class Snippet10
-{
+public class Snippet10 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int b, c;
 		int a = b = c = 10;
 
@@ -15,5 +13,7 @@ public class Snippet10
 	}
 
 }
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // We can declare and initialize multiple variables of same type on a single line.

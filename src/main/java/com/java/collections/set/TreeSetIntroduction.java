@@ -1,7 +1,6 @@
 package com.java.collections.set;
 
-public class TreeSetIntroduction
-{
+public class TreeSetIntroduction {
 	// 1. The underlying data structure is BalancedTree.
 
 	// 2. Duplicate objects are not allowed.

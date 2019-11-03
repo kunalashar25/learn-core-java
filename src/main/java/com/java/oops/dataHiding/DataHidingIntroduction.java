@@ -1,7 +1,6 @@
 package com.java.oops.dataHiding;
 
-public class DataHidingIntroduction
-{
+public class DataHidingIntroduction {
 
 	// 1. Outside person can't access our internal data directly or our internal data should not go out directly, this
 	// oops feature is called as Data Hiding.
@@ -18,8 +17,7 @@ public class DataHidingIntroduction
 	// Example:
 	private double balance;
 
-	public double getBalance()
-	{
+	public double getBalance() {
 		// Validation code to validate user
 		return balance;
 	}

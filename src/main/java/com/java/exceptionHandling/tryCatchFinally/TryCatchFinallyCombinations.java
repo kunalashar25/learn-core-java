@@ -1,8 +1,9 @@
 package com.java.exceptionHandling.tryCatchFinally;
 
-public class TryCatchFinallyCombinations
-{
-	/** Various combinations of try-catch-finally block **/
+public class TryCatchFinallyCombinations {
+	/**
+	 * Various combinations of try-catch-finally block
+	 **/
 	// 1. In try-catch-finally, order is important.
 
 	// 2. Whenever we're writing try, compulsory we should write either catch or finally otherwise we'll get compile
@@ -17,415 +18,298 @@ public class TryCatchFinallyCombinations
 	// try-catch-finally is allowed.
 
 	// 6. Curly braces are mandatory for try, catch and finally blocks.
+	public void combo1() {
+		try {
 
-	public void combo1()
-	{
-		try
-		{
-
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 
 		}
 	}
 
-	public void combo2()
-	{
-		try
-		{
+	public void combo2() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 
 		}
 	}
 
-	public void combo3()
-	{
-		try
-		{
+	public void combo3() {
+		try {
 
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 
 		}
 
 		// CE: Exception has already been caught
 	}
 
-	public void combo4()
-	{
-		try
-		{
-
-		}
-		catch (Exception e)
-		{
-
-		}
-		finally
-		{
-
-		}
-	}
-
-	public void combo5()
-	{
-		try
-		{
-
-		}
-		finally
-		{
-
-		}
-	}
-
-	public void combo6()
-	{
-		try
-		{
-
-		}
-		catch (Exception e)
-		{
-
-		}
-
-		try
-		{
-
-		}
-		catch (ArithmeticException e)
-		{
-
-		}
-	}
-
-	public void combo7()
-	{
-		try
-		{
-
-		}
-		catch (Exception e)
-		{
-
-		}
-		try
-		{
-
-		}
-		finally
-		{
-
-		}
-	}
-
-	public void combo8()
-	{
+	public void combo4() {
 		try {
-			
+
+		} catch (Exception e) {
+
+		} finally {
+
+		}
+	}
+
+	public void combo5() {
+		try {
+
+		} finally {
+
+		}
+	}
+
+	public void combo6() {
+		try {
+
+		} catch (Exception e) {
+
+		}
+
+		try {
+
+		} catch (ArithmeticException e) {
+
+		}
+	}
+
+	public void combo7() {
+		try {
+
+		} catch (Exception e) {
+
+		}
+		try {
+
+		} finally {
+
+		}
+	}
+
+	public void combo8() {
+		try {
+
 		}
 		// CE: try without catch or finally.
 	}
 
-	public void combo9()
-	{
-		catch (Exception e)
+	public void combo9() {
+		catch(Exception e)
 		{
 
 		}
 		// CE: catch without try
 	}
 
-	public void combo10()
-	{
-		finally {
-			
+	public void combo10() {
+		finally{
+
 		}
 		// CE: finally without try
 	}
 
-	public void combo11()
-	{
-		try
-		{
+	public void combo11() {
+		try {
+
+		} finally {
 
 		}
-		finally
-		{
+		catch(Exception e){
 
-		}
-		catch(Exception e) {
-			
 		}
 		// CE: catch without try
 	}
 
-	public void combo12()
-	{
+	public void combo12() {
 		try {
-			
+
 		}
 		System.out.println("Hello");
 		catch(Exception e)
 		{
-			
+
 		}
 		// CE1: try without catch or fianlly
 		// CE2: catch without try
 	}
 
-	public void combo13()
-	{
-		try
-		{
+	public void combo13() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
 		}
 		System.out.println("Hello");
-		catch (Exception e)
+		catch(Exception e)
 		{
 
 		}
-		
+
 		// CE: catch without try
 	}
 
-	public void combo14()
-	{
-		try
-		{
+	public void combo14() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
 		}
 		System.out.println("Hello");
 		finally
 		{
 
-		}	
-		
+		}
+
 		// CE: finally without try
 	}
 
-	public void combo15()
-	{
-		try
-		{
-			try
-			{
+	public void combo15() {
+		try {
+			try {
+
+			} catch (ArithmeticException e) {
 
 			}
-			catch (ArithmeticException e)
-			{
-
-			}
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
 		}
 	}
 
-	public void combo16()
-	{
-		try
-		{
-			try
-			{
-				
+	public void combo16() {
+		try {
+			try {
+
 			}
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
 		}
-		
+
 		// CE: try without catch or finally
 	}
 
-	public void combo17()
-	{
-		try
-		{
-			try
-			{
+	public void combo17() {
+		try {
+			try {
+
+			} finally {
 
 			}
-			finally
-			{
-
-			}
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
 		}
 	}
 
-	public void combo18()
-	{
-		try
-		{
+	public void combo18() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
-			try
-			{
+		} catch (ArithmeticException e) {
+			try {
 
-			}
-			finally
-			{
+			} finally {
 
 			}
 		}
 	}
 
-	public void combo19()
-	{
-		try
-		{
+	public void combo19() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 			finally
 			{
-				
+
 			}
 		}
 		// CE: finally without try
 	}
 
-	public void combo20()
-	{
-		try
-		{
+	public void combo20() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
-		}
-		finally
-		{
-			try
-			{
+		} finally {
+			try {
 
-			}
-			catch (ArithmeticException e)
-			{
+			} catch (ArithmeticException e) {
 
 			}
 		}
 	}
 
-	public void combo21()
-	{
-		try
-		{
+	public void combo21() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
-		}
-		finally
-		{
+		} finally {
 			finally
 			{
-				
+
 			}
 		}
-		
+
 		//CE: finally without try
 	}
 
-	public void combo22()
-	{
-		try
-		{
+	public void combo22() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
+
+		} finally {
 
 		}
 		finally
 		{
-			
+
 		}
-		finally
-		{
-			
-		}
-		
+
 		//CE: finally without try
 	}
 
-	public void combo23()
-	{
+	public void combo23() {
 		try
-			System.out.println("Hello");
-		catch (ArithmeticException e)
+		System.out.println("Hello");
+		catch(ArithmeticException e)
 		{
 
 		}
 		finally
 		{
-			
+
 		}
 		// Invalid. Curley braces are must
 	}
 
-	public void combo24()
-	{
-		try
+	public void combo24() {
+		try {
+
+		} catch (ArithmeticException e)
+		System.out.println("Hello");
+		finally
 		{
 
 		}
-		catch (ArithmeticException e)
-			System.out.println("Hello");
-		finally
-		{
-			
-		}
-		
+
 		// Invalid. Curley braces are must
 	}
 
-	public void combo25()
-	{
-		try
-		{
+	public void combo25() {
+		try {
 
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 
-		}
-		finally
-			System.out.println("Hello");
-		
+		} finally
+		System.out.println("Hello");
+
 		// Invalid. Curley braces are must
 	}
 }

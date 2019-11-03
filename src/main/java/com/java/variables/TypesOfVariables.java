@@ -2,11 +2,9 @@ package com.java.variables;
 
 import com.java.arrays.AnonymousArrays;
 
-public class TypesOfVariables
-{
+public class TypesOfVariables {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Division 1: Based on type of value represented by a variable, all variables
 		// are divided into two types.
 

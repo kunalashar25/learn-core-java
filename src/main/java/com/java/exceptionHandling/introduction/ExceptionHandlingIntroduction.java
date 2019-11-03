@@ -2,8 +2,7 @@ package com.java.exceptionHandling.introduction;
 
 import java.io.FileNotFoundException;
 
-public class ExceptionHandlingIntroduction
-{
+public class ExceptionHandlingIntroduction {
 	// 1. An unexpected unwanted event that disturbs normal flow of the program is called an Exception.
 
 	// Example:
@@ -22,17 +21,13 @@ public class ExceptionHandlingIntroduction
 	// available then our program should not be terminated abnormally. We have to provide some local file to continue
 	// rest of the program normally. This way of defining alternative is nothing but exception handling.
 
-	public void sampleCode()
-	{
-		try
-		{
+	public void sampleCode() {
+		try {
 			// read data from remote file
-		}
-		catch (FileNotFoundException e)
-		{
+		} catch (FileNotFoundException e) {
 			// use local file and continue rest of the program locally.
 		}
 	}
-	
+
 	// Refer ExceptionHandlingKeywords.png
 }

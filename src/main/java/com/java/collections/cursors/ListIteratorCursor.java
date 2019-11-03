@@ -3,8 +3,7 @@ package com.java.collections.cursors;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class ListIteratorCursor
-{
+public class ListIteratorCursor {
 	// 1. By using ListIterator we can move either to the forward direction or backward direction and hence, it is
 	// bidirectional cursor.
 
@@ -19,7 +18,9 @@ public class ListIteratorCursor
 	// 4. ListIterator is a child interface of Iterator and hence, all method present in Iterator is by default
 	// available to the ListIterator.
 
-	/** Methods **/
+	/**
+	 * Methods
+	 **/
 	// Forward Movement
 
 	// 1. public boolean hasNext();
@@ -43,9 +44,7 @@ public class ListIteratorCursor
 	// 8. public void add(Object o);
 
 	// 9. public void set(Object o);
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		LinkedList list = new LinkedList<>();
 		list.add("A");
 		list.add("B");
@@ -58,19 +57,13 @@ public class ListIteratorCursor
 
 		System.out.println(itr.getClass().getName()); // Output: java.util.LinkedList$ListItr
 
-		while (itr.hasNext())
-		{
+		while (itr.hasNext()) {
 			String s = (String) itr.next();
-			if (s.equals("A"))
-			{
+			if (s.equals("A")) {
 				itr.remove();
-			}
-			else if (s.equals("B"))
-			{
+			} else if (s.equals("B")) {
 				itr.add("E");
-			}
-			else if (s.equals("C"))
-			{
+			} else if (s.equals("C")) {
 				itr.set("F");
 			}
 		}

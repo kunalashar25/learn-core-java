@@ -1,7 +1,6 @@
 package com.java.oops.constructor.overloadedConstructor;
 
-public class ConstructorGist
-{
+public class ConstructorGist {
 	/** Which of the following is valid? **/
 
 	// 1. The main purpose of constructor is to create an object?

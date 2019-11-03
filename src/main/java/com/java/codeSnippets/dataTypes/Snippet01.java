@@ -1,28 +1,24 @@
 package com.java.codeSnippets.dataTypes;
 
-public class Snippet01
-{
-	public static void main(String[] args)
-	{
+public class Snippet01 {
+	public static void main(String[] args) {
 		DataTypes d = new DataTypes();
 		d.show();
 	}
 }
 
-class DataTypes
-{
-	boolean		b1;
-	byte		b2;
-	short		s;
-	int			i;
-	long		l;
-	float		f;
-	double		d;
-	String		str;
-	DataTypes	dt;
+class DataTypes {
+	boolean b1;
+	byte b2;
+	short s;
+	int i;
+	long l;
+	float f;
+	double d;
+	String str;
+	DataTypes dt;
 
-	void show()
-	{
+	void show() {
 		System.out.println(b1); // Output: false
 		System.out.println(b2); // Output: 0
 		System.out.println(s); // Output: 0
@@ -36,5 +32,7 @@ class DataTypes
 
 }
 
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // As all variables are declared at instance level, JVM will assign default values to all the instance variables.

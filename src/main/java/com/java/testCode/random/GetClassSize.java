@@ -6,104 +6,87 @@ import java.lang.instrument.Instrumentation;
 import java.lang.instrument.UnmodifiableClassException;
 import java.util.jar.JarFile;
 
-public class GetClassSize
-{
+public class GetClassSize {
 	static Instrumentation i = new Instrumentation() {
 
-		public void setNativeMethodPrefix(ClassFileTransformer transformer, String prefix)
-		{
+		public void setNativeMethodPrefix(ClassFileTransformer transformer, String prefix) {
 			// TODO Auto-generated method stub
 
 		}
 
-		public void retransformClasses(Class<?>... classes) throws UnmodifiableClassException
-		{
+		public void retransformClasses(Class<?>... classes) throws UnmodifiableClassException {
 			// TODO Auto-generated method stub
 
 		}
 
-		public boolean removeTransformer(ClassFileTransformer transformer)
-		{
+		public boolean removeTransformer(ClassFileTransformer transformer) {
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		public void redefineClasses(ClassDefinition... definitions)
-			throws ClassNotFoundException, UnmodifiableClassException
-		{
+				throws ClassNotFoundException, UnmodifiableClassException {
 			// TODO Auto-generated method stub
 
 		}
 
-		public boolean isRetransformClassesSupported()
-		{
+		public boolean isRetransformClassesSupported() {
 			// TODO Auto-generated method stub
 			return false;
 		}
 
-		public boolean isRedefineClassesSupported()
-		{
+		public boolean isRedefineClassesSupported() {
 			// TODO Auto-generated method stub
 			return false;
 		}
 
-		public boolean isNativeMethodPrefixSupported()
-		{
+		public boolean isNativeMethodPrefixSupported() {
 			// TODO Auto-generated method stub
 			return false;
 		}
 
-		public boolean isModifiableClass(Class<?> theClass)
-		{
+		public boolean isModifiableClass(Class<?> theClass) {
 			// TODO Auto-generated method stub
 			return false;
 		}
 
-		public long getObjectSize(Object objectToSize)
-		{
+		public long getObjectSize(Object objectToSize) {
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
-		public Class[] getInitiatedClasses(ClassLoader loader)
-		{
+		public Class[] getInitiatedClasses(ClassLoader loader) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
-		public Class[] getAllLoadedClasses()
-		{
+		public Class[] getAllLoadedClasses() {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
-		public void appendToSystemClassLoaderSearch(JarFile jarfile)
-		{
+		public void appendToSystemClassLoaderSearch(JarFile jarfile) {
 			// TODO Auto-generated method stub
 
 		}
 
-		public void appendToBootstrapClassLoaderSearch(JarFile jarfile)
-		{
+		public void appendToBootstrapClassLoaderSearch(JarFile jarfile) {
 			// TODO Auto-generated method stub
 
 		}
 
-		public void addTransformer(ClassFileTransformer transformer, boolean canRetransform)
-		{
+		public void addTransformer(ClassFileTransformer transformer, boolean canRetransform) {
 			// TODO Auto-generated method stub
 
 		}
 
-		public void addTransformer(ClassFileTransformer transformer)
-		{
+		public void addTransformer(ClassFileTransformer transformer) {
 			// TODO Auto-generated method stub
 
 		}
 	};
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		GetClassSize g1 = new GetClassSize();
 		System.out.println();
 		System.out.println(i.getObjectSize(i));

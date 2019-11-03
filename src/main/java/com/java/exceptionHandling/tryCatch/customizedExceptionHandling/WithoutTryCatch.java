@@ -1,9 +1,7 @@
 package com.java.exceptionHandling.tryCatch.customizedExceptionHandling;
 
-public class WithoutTryCatch
-{
-	public static void main(String[] args)
-	{
+public class WithoutTryCatch {
+	public static void main(String[] args) {
 		System.out.println("Statement 1");
 
 		System.out.println(10 / 0);

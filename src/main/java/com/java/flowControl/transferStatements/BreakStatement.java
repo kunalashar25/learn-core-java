@@ -1,16 +1,13 @@
 package com.java.flowControl.transferStatements;
 
-public class BreakStatement
-{
+public class BreakStatement {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// We can use break statement in the following places:
 		/** 1. Inside Switch > to stop fall-through **/
 
 		int x = 0;
-		switch (x)
-		{
+		switch (x) {
 			case 0:
 				System.out.println(0);
 				break;
@@ -24,8 +21,7 @@ public class BreakStatement
 
 		/** 2. Inside Loops > to break loop execution based on some condition **/
 
-		for (int i = 0; i < 5; i++)
-		{
+		for (int i = 0; i < 5; i++) {
 			if (i == 2)
 				break;
 			System.out.println(i);

@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.introduction;
 
-public class TopExceptions
-{
+public class TopExceptions {
 	// 1. Based on the person who is rising an exception, all exceptions are divided into two types:
 	// i. JVM Exceptions.
 	// ii. Programmatic Exceptions.
@@ -16,15 +15,16 @@ public class TopExceptions
 	// wrong are called programmatic exceptions.
 	// Examples: TooOldException, TooYoungException, IllegalArgumentException, etc.
 
-	/** Top 10 Exception **/
+	/**
+	 * Top 10 Exception
+	 **/
 
 	// 1. ArrayIndexOutOfBoundsException
 	// i. It is a child class of RuntimeException and hence it's unchecked exception.
 	// ii. Raised automatically by JVM whenever we're trying to access Array elements without out of range index.
 
 	// Example
-	public void m1()
-	{
+	public void m1() {
 		int[] x = new int[4];
 		System.out.println(x[0]);
 		System.out.println(x[10]); // Exception
@@ -36,8 +36,7 @@ public class TopExceptions
 	// ii. Raised automatically by JVM whenever we're trying to perform any operation on null.
 
 	// Example
-	public void m2()
-	{
+	public void m2() {
 		String s = null;
 		System.out.println(s.length()); // Exception
 	}
@@ -47,8 +46,7 @@ public class TopExceptions
 	// ii. Raised automatically by JVM whenever we're trying to typecast parent object to child type.
 
 	// Example
-	public void m3()
-	{
+	public void m3() {
 		Object o = new Object();
 		String s = (String) o; // Exception
 
@@ -61,13 +59,11 @@ public class TopExceptions
 	// ii. Raised automatically by JVM whenever we're trying to perform recursive method call.
 
 	// Example
-	public static void m4_1()
-	{
+	public static void m4_1() {
 		m4_2();
 	}
 
-	public static void m4_2()
-	{
+	public static void m4_2() {
 		m4_1();
 	}
 
@@ -87,8 +83,7 @@ public class TopExceptions
 	// Examples
 	static int x = 10 / 0; // Error
 
-	static
-	{
+	static {
 		String s = null;
 		System.out.println(s.length()); // Error
 	}
@@ -102,8 +97,7 @@ public class TopExceptions
 	// The valid range of thread priority is 1 to 10. If we're trying to set the priority with any other value then
 	// we'll get runtime exception saying IllegalArgumentException
 
-	public void m7()
-	{
+	public void m7() {
 		Thread t = new Thread();
 		t.setPriority(7); // Valid
 		t.setPriority(15); // Exception
@@ -127,8 +121,7 @@ public class TopExceptions
 	// After starting a thread we're not allowed to restart same thread again otherwise we'll get runtime exception
 	// saying IllegalStateException.
 
-	public void m9()
-	{
+	public void m9() {
 		Thread t = new Thread();
 		t.start();
 
@@ -141,8 +134,7 @@ public class TopExceptions
 
 	// Example
 	// if x is not greater than 10 then we'll get runtime exception saying AssertionsError.
-	public void m10()
-	{
+	public void m10() {
 		int x = 14;
 		assert (x > 10);
 	}

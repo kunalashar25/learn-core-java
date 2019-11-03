@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.tryCatchFinally;
 
-public class Final_vs_Finally_Finalize
-{
+public class Final_vs_Finally_Finalize {
 	/** final **/
 	// 1. final is a modifier applicable for classes, method and variables.
 

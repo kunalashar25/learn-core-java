@@ -1,10 +1,8 @@
 package com.java.literal;
 
-public class FloatingPointLiteral
-{
+public class FloatingPointLiteral {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// by default floating point literal is of double type. Hence, we can't
 		// assign directly to the float variable but we can specify floating
 		// point literal as float type by suffixed with small or capital 'F'.

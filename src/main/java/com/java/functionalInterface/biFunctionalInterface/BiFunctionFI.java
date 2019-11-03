@@ -3,10 +3,8 @@ package com.java.functionalInterface.biFunctionalInterface;
 import java.util.ArrayList;
 import java.util.function.BiFunction;
 
-public class BiFunctionFI
-{
-	public static void main(String[] args)
-	{
+public class BiFunctionFI {
+	public static void main(String[] args) {
 		// Example 1
 		BiFunction<Integer, String, Employee> f1 = (no, name) -> new Employee(no, name);
 
@@ -16,8 +14,7 @@ public class BiFunctionFI
 		list.add(f1.apply(102, "LMN"));
 		list.add(f1.apply(103, "XYZ"));
 
-		for (Employee e : list)
-		{
+		for (Employee e : list) {
 			System.out.println("Number : " + e.number + " | Name : " + e.name);
 		}
 		// Output:
@@ -29,13 +26,11 @@ public class BiFunctionFI
 	}
 }
 
-class Employee
-{
-	int		number;
-	String	name;
+class Employee {
+	int number;
+	String name;
 
-	public Employee(int number, String name)
-	{
+	public Employee(int number, String name) {
 		this.number = number;
 		this.name = name;
 	}

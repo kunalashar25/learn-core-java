@@ -1,13 +1,10 @@
 package com.java.lambdaExpressions.anonymousInnerClass;
 
-public class AnonymousInnerClassWithLambdaExpression
-{
-	public static void main(String[] args)
-	{
+public class AnonymousInnerClassWithLambdaExpression {
+	public static void main(String[] args) {
 		Runnable r = () ->
 		{
-			for (int i = 0; i < 10; i++)
-			{
+			for (int i = 0; i < 10; i++) {
 				System.out.println("Child Thread : " + i);
 			}
 		};
@@ -15,8 +12,7 @@ public class AnonymousInnerClassWithLambdaExpression
 		Thread t = new Thread(r);
 		t.start();
 
-		for (int i = 0; i < 10; i++)
-		{
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Parent Thread : " + i);
 		}
 	}

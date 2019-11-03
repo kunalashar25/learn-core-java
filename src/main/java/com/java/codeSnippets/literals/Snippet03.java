@@ -1,15 +1,15 @@
 package com.java.codeSnippets.literals;
 
-public class Snippet03
-{
+public class Snippet03 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		boolean b = True;
 
 		System.out.println(b);
 	}
 
 }
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // CE: True cannot be resolved to a variable

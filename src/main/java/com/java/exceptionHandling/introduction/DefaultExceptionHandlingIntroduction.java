@@ -1,7 +1,6 @@
 package com.java.exceptionHandling.introduction;
 
-public class DefaultExceptionHandlingIntroduction
-{
+public class DefaultExceptionHandlingIntroduction {
 
 	// 1. Inside a method if any exception occurs the method in which it is raised is responsible to create exception
 	// object by including the following information:
@@ -29,18 +28,15 @@ public class DefaultExceptionHandlingIntroduction
 	// abnormally:
 	// Exception in thread "threadName" Name of Exception : Description Stack Trace
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		doStuff();
 	}
 
-	public static void doStuff()
-	{
+	public static void doStuff() {
 		doMoreStuff();
 	}
 
-	public static void doMoreStuff()
-	{
+	public static void doMoreStuff() {
 		System.out.println(10 / 0);
 	}
 }

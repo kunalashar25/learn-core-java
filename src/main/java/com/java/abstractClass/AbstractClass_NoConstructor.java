@@ -1,19 +1,16 @@
 package com.java.abstractClass;
 
-public abstract class AbstractClass_NoConstructor
-{
-	String	firstName;
-	String	lastName;
-	int		age;
-	String	address;
+public abstract class AbstractClass_NoConstructor {
+	String firstName;
+	String lastName;
+	int age;
+	String address;
 }
 
-class Student extends AbstractClass_NoConstructor
-{
+class Student extends AbstractClass_NoConstructor {
 	int rollNo;
 
-	public Student(String firstName, String lastName, int age, String address, int rollNo)
-	{
+	public Student(String firstName, String lastName, int age, String address, int rollNo) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
@@ -21,18 +18,15 @@ class Student extends AbstractClass_NoConstructor
 		this.rollNo = rollNo;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Student s = new Student("A", "B", 10, "Mumbai", 1);
 	}
 }
 
-class Teacher extends AbstractClass_NoConstructor
-{
+class Teacher extends AbstractClass_NoConstructor {
 	String subject;
 
-	public Teacher(String firstName, String lastName, int age, String address, String subject)
-	{
+	public Teacher(String firstName, String lastName, int age, String address, String subject) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
@@ -40,8 +34,7 @@ class Teacher extends AbstractClass_NoConstructor
 		this.subject = subject;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Teacher t = new Teacher("A", "B", 10, "Mumbai", "English");
 	}
 }

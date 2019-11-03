@@ -1,25 +1,19 @@
 package com.java.lambdaExpressions.multiThreadingExample;
 
-public class MultiThreadingBasicExample
-{
-	public static void main(String[] args)
-	{
+public class MultiThreadingBasicExample {
+	public static void main(String[] args) {
 		Test t = new Test();
 		Thread th = new Thread(t);
 		th.start();
-		for (int i = 0; i < 10; i++)
-		{
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Main Thread : " + i);
 		}
 	}
 }
 
-class Test implements Runnable
-{
-	public void run()
-	{
-		for (int i = 0; i < 10; i++)
-		{
+class Test implements Runnable {
+	public void run() {
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Child Thread : " + i);
 		}
 	}

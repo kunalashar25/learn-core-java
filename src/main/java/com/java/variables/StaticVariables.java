@@ -1,16 +1,14 @@
 package com.java.variables;
 
-public class StaticVariables
-{
+public class StaticVariables {
 
-	static int		x	= 10;
-	int				y	= 20;
-	static int		i;
-	static double	d;
-	static boolean	b;
+	static int x = 10;
+	int y = 20;
+	static int i;
+	static double d;
+	static boolean b;
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// if the value of a variable is not varied from object to object then it is not
 		// recommended to declare variable as instance variable, we have to declare such
 		// type of variable at class level by using static modifier.
@@ -59,8 +57,7 @@ public class StaticVariables
 		System.out.println("s2.x=" + s2.x + " s2.y=" + s2.y); // Output: s2.x=100 s2.y=20
 	}
 
-	public void instanceAreaMethod()
-	{
+	public void instanceAreaMethod() {
 		System.out.println("Instance area: " + x);
 	}
 

@@ -1,24 +1,19 @@
 package com.java.operatorsAndAssignment;
 
-public class InterviewFAQs
-{
-	public InterviewFAQs()
-	{
+public class InterviewFAQs {
+	public InterviewFAQs() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public InterviewFAQs(int number)
-	{
+	public InterviewFAQs(int number) {
 		System.out.println(number);
 	}
 
-	public InterviewFAQs(String text)
-	{
+	public InterviewFAQs(String text) {
 		System.out.println(text);
 	}
 
-	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException
-	{
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		/** new v/s newIstance() **/
 		// We can use new operator to create an object if we know class name at the beginning,
 
@@ -31,7 +26,7 @@ public class InterviewFAQs
 		// We can use newInstance() to create object if we don't know class name at the beginning and it's available
 		// dynamically at runtime
 
-		String[] args1 = new String[] { "InterviewFAQs", "Customer" };
+		String[] args1 = new String[]{"InterviewFAQs", "Customer"};
 
 		// Object o = Class.forName(args1[0]).newInstance();
 		// System.out.println("Object Created for " + o.getClass().getName());
@@ -86,7 +81,7 @@ public class InterviewFAQs
 		// is of particular type of not and we don't know the type at the beginning and it is available dynamically at
 		// run time.
 
-		String[] args2 = new String[] { "Runnable", "String" };
+		String[] args2 = new String[]{"Runnable", "String"};
 		System.out.println(Class.forName(args2[0]).isInstance(t)); // Output: true
 		System.out.println(Class.forName(args2[1]).isInstance(t)); // Output: false
 

@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class OneDArrayDeclaration
-{
+public class OneDArrayDeclaration {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// An array is an indexed collection of fixed number of homogeneous data
 		// elements.
 

@@ -1,7 +1,6 @@
 package com.java.collections.introduction;
 
-public class CollectionIntroduction
-{
+public class CollectionIntroduction {
 	/** Arrays Overview **/
 	// 1. An Array is an indexed collection of fixed number of homogeneous data elements.
 

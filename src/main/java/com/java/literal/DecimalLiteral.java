@@ -1,10 +1,8 @@
 package com.java.literal;
 
-public class DecimalLiteral
-{
+public class DecimalLiteral {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// for integral data types we can have literal values in below types.
 		// by default every integral literal is of int type but we can specify
 		// explicitly as long type by suffixed with small or capital 'L'

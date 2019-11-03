@@ -1,13 +1,11 @@
 package com.java.oops.overloading;
 
-public class MethodSignature
-{
+public class MethodSignature {
 
 	// 1. In Java, method signature consist of method name followed by argument types.
 
 	// Example
-	public static int method1(int i, float f)
-	{
+	public static int method1(int i, float f) {
 		// Method Signature: method1(int i, float f)
 		return 0;
 	}
@@ -19,8 +17,7 @@ public class MethodSignature
 
 	// 4. Within a class, two methods with same signature are not allowed.
 
-	public void m1(int i)
-	{
+	public void m1(int i) {
 
 	}
 

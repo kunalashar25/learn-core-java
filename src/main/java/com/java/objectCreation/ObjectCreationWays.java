@@ -6,10 +6,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.text.DateFormat;
 
-public class ObjectCreationWays
-{
-	public static void main(String[] args)
-	{
+public class ObjectCreationWays {
+	public static void main(String[] args) {
 		// Q. In how many ways we can create an object in java or in how many ways we can get object in java?
 
 		/** 1. By using new operator **/
@@ -18,21 +16,14 @@ public class ObjectCreationWays
 
 		/** 2. By using newInstance() method **/
 
-		try
-		{
+		try {
 			ObjectCreationWays o2 = (ObjectCreationWays) Class.forName("ObjectCreationWays").newInstance();
 			// Note: Return type of newInstance() method is Object. Hence, we need to cast it to class type.
-		}
-		catch (InstantiationException e)
-		{
+		} catch (InstantiationException e) {
 			e.printStackTrace();
-		}
-		catch (IllegalAccessException e)
-		{
+		} catch (IllegalAccessException e) {
 			e.printStackTrace();
-		}
-		catch (ClassNotFoundException e)
-		{
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 
@@ -45,33 +36,23 @@ public class ObjectCreationWays
 
 		ObjectCreationWays ob1 = new ObjectCreationWays();
 
-		try
-		{
+		try {
 			ObjectCreationWays ob2 = (ObjectCreationWays) ob1.clone();
-		}
-		catch (CloneNotSupportedException e)
-		{
+		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
 
 		/** 5. By using Deserialization **/
 
-		try
-		{
+		try {
 			FileInputStream fis = new FileInputStream("");
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			ObjectCreationWays o3 = (ObjectCreationWays) ois.readObject();
-		}
-		catch (FileNotFoundException e)
-		{
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-		catch (IOException e)
-		{
+		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		catch (ClassNotFoundException e)
-		{
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}

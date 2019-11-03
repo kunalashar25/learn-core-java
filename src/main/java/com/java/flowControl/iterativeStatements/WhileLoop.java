@@ -1,32 +1,29 @@
 package com.java.flowControl.iterativeStatements;
 
-public class WhileLoop
-{
+public class WhileLoop {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		// 1. If we don't know number of iterations in advance then we should go for while loop.
 
 		// Example
 		/*
 		 * while (rs.next()) {
-		 * 
+		 *
 		 * }
-		 * 
+		 *
 		 * while (e.hasMoreElements()) {
-		 * 
+		 *
 		 * }
-		 * 
+		 *
 		 * while (itr.hasNext()) {
-		 * 
+		 *
 		 * }
 		 */
 
 		// Syntax
 		boolean b = true;
-		while (b)
-		{
+		while (b) {
 			System.out.println("In while");
 			b = false;
 		}
@@ -45,8 +42,7 @@ public class WhileLoop
 
 		// Example 1
 
-		while (b)
-		{
+		while (b) {
 			System.out.println("Hello");
 		}
 
@@ -57,8 +53,7 @@ public class WhileLoop
 
 		// Example 3
 
-		while (b)
-		{
+		while (b) {
 			int x = 10;
 		}
 

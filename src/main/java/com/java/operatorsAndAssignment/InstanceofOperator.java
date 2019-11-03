@@ -3,11 +3,9 @@ package com.java.operatorsAndAssignment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InstanceofOperator
-{
+public class InstanceofOperator {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/** We can use instanceof operator to check whether the given object is of particular type or not **/
 
 		// Example
@@ -21,13 +19,10 @@ public class InstanceofOperator
 
 		Object o = l.get(0);
 
-		if (o instanceof ArithmeticOperators)
-		{
+		if (o instanceof ArithmeticOperators) {
 			ArithmeticOperators ao = (ArithmeticOperators) o;
 			// to perform ArithmeticOperators functionality
-		}
-		else if (o instanceof EqualityOperators)
-		{
+		} else if (o instanceof EqualityOperators) {
 			EqualityOperators eo = (EqualityOperators) o;
 			// to perform EqualityOperators functionality
 		}

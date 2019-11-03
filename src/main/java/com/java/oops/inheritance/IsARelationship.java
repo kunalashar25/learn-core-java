@@ -1,17 +1,17 @@
 package com.java.oops.inheritance;
 
-public class IsARelationship
-{
+public class IsARelationship {
 	// 1. Is-A-Relationship is also known as inheritance.
 
 	// 2. The main advantage of Is-A relationship is code re-usability.
 
 	// 3. By using extends keyword we can implement Is-A-Relationship.
 
-	/** Loop Holes **/
+	/**
+	 * Loop Holes
+	 **/
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// Case 1:
 		Parent p1 = new Parent();
 		p1.method1();
@@ -48,23 +48,21 @@ public class IsARelationship
 
 }
 
-class Parent
-{
-	void method1()
-	{
+class Parent {
+	void method1() {
 		System.out.println("Parent method 1");
 	}
 }
 
-class Child extends Parent
-{
-	void method2()
-	{
+class Child extends Parent {
+	void method2() {
 		System.out.println("Child method 2");
 	}
 }
 
-/** Examples **/
+/**
+ * Examples
+ **/
 // 1. Total Java API is implemented based on inheritance concept.
 
 // 2. The most common methods which are applicable for any java object are defined in Object class and hence, every

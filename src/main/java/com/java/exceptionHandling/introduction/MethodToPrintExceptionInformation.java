@@ -1,20 +1,15 @@
 package com.java.exceptionHandling.introduction;
 
-public class MethodToPrintExceptionInformation
-{
+public class MethodToPrintExceptionInformation {
 	// Throwable class defines the following methods to print exception information:
 	// i. printStackTrace() > Name of Exception : Description and Stack Trace
 	// ii. toString() > Name of Exception : Description
 	// iii. getMessage() > Description
 
-	public static void main(String[] args)
-	{
-		try
-		{
+	public static void main(String[] args) {
+		try {
 			System.out.println(10 / 0);
-		}
-		catch (ArithmeticException e)
-		{
+		} catch (ArithmeticException e) {
 			e.printStackTrace();
 			System.out.println(e);
 			System.out.println(e.toString());
@@ -23,7 +18,9 @@ public class MethodToPrintExceptionInformation
 	}
 }
 
-/** Output for statement e.printStackTrace() **/
+/**
+ * Output for statement e.printStackTrace()  Output for statement System.out.println(e) and System.out.println(e.toString())  Output for statement System.out.println(e.getMessage())
+ **/
 // java.lang.ArithmeticException: / by zero
 // at com.java.exceptionHandling.MethodToPrintExceptionInformation.main(MethodToPrintExceptionInformation.java:14)
 

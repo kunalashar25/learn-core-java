@@ -1,10 +1,8 @@
 package com.java.arrays;
 
-public class MixedArrayDeclaration
-{
+public class MixedArrayDeclaration {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int[] a, b; // a=1, b=1
 		int[] c[], d; // c=2, d=1
 		int[] e[], f[]; // e=2, f=2

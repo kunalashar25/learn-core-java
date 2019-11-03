@@ -1,16 +1,13 @@
 package com.java.operatorsAndAssignment;
 
-public class Operator_Operand_Precedence
-{
+public class Operator_Operand_Precedence {
 
-	public static int printIndex(int i)
-	{
+	public static int printIndex(int i) {
 		System.out.println("Executing.." + i);
 		return i;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// In Java, we have only operator precedence but not operand precedence.
 
 		// Before applying any operator, all operands will be evaluated from left to right.

@@ -1,7 +1,6 @@
 package com.java.lambdaExpressions.lambdaAlternatives;
 
-public class MethodReference
-{
+public class MethodReference {
 	// 1. It is used as an alternative to lambda expressions.
 
 	// 2. Instead of writing lambda expressions again and again, we can provide method reference for code re-usability.
@@ -16,29 +15,23 @@ public class MethodReference
 
 	// 5. In case of method reference, different return type is allowed.
 
-	public static void child()
-	{
-		for (int i = 0; i < 10; i++)
-		{
+	public static void child() {
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Child Thread :: " + i);
 		}
 	}
 
-	public void child2()
-	{
-		for (int i = 0; i < 10; i++)
-		{
+	public void child2() {
+		for (int i = 0; i < 10; i++) {
 			System.out.println("Child Thread :: " + i);
 		}
 	}
 
-	public static void sum(int x, int y)
-	{
+	public static void sum(int x, int y) {
 		System.out.println("Sum :: " + (x + y));
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// using static method
 		Runnable r = MethodReference::child; // this statement is alternative to lambda expression.
 
@@ -56,7 +49,6 @@ public class MethodReference
 	}
 }
 
-interface Interf
-{
+interface Interf {
 	public void add(int a, int b);
 }

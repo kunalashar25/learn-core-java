@@ -1,18 +1,15 @@
 package com.java.flowControl.selectionStatements;
 
-public class SwitchCase
-{
+public class SwitchCase {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// If several options are available then it is not recommended to use nested if-else because it reduces
 		// readability of code. To handle this requirement we should go for switch statements.
 
 		int x = 2;
 
 		// Syntax:
-		switch (x)
-		{
+		switch (x) {
 			case 1:
 				System.out.println("1");
 				break;
@@ -36,8 +33,7 @@ public class SwitchCase
 
 		// 3. Both case and default are optional i.e. empty switch statement is a valid java syntax.
 		// Example
-		switch (x)
-		{
+		switch (x) {
 
 		}
 
@@ -45,15 +41,13 @@ public class SwitchCase
 		// allowed inside switch otherwise we'll get compile time error.
 
 		// Example
-		switch (x)
-		{
+		switch (x) {
 			// System.out.println("default"); CE: case, default or } expected
 		}
 
 		// 5. Every case label should be compile time constant i.e. constant expression.
 		final int y = 20;
-		switch (x)
-		{
+		switch (x) {
 			case 10:
 				// case y; CE: constant expression required will be displayed if y is not declared as final.
 
@@ -61,8 +55,7 @@ public class SwitchCase
 		}
 
 		// 6. Both switch argument and case label can be expressions but case label should be constant expression.
-		switch (x + 1)
-		{
+		switch (x + 1) {
 			case 10:
 				System.out.println("10");
 
@@ -72,23 +65,20 @@ public class SwitchCase
 
 		// 7. Every case label should be in the range of switch argument type otherwise we'll get compile time error
 		byte b = 10;
-		switch (b)
-		{
+		switch (b) {
 			case 10:
 			case 100:
 				// case 1000: CE: possible loss of precision. Found int Required byte
 		}
 
-		switch (b + 1)
-		{
+		switch (b + 1) {
 			case 10:
 			case 100:
 			case 1000:
 		}
 
 		// 8. Duplicate case labels are not allowed in switch otherwise we'll get compile time error.
-		switch (x)
-		{
+		switch (x) {
 			case 97:
 			case 98:
 			case 99:
@@ -102,8 +92,7 @@ public class SwitchCase
 
 		// 9. Fall-through inside switch: Within the switch if any case is matched, from that case onwards all
 		// statements will be executed until break or end of switch
-		switch (x)
-		{
+		switch (x) {
 			case 0:
 				System.out.println(0);
 			case 1:
@@ -121,8 +110,7 @@ public class SwitchCase
 
 		// The main advantage of Fall-through inside switch is we can define common action for multiple cases (Code
 		// reusability).
-		switch (x)
-		{
+		switch (x) {
 			case 1:
 			case 2:
 			case 3:
@@ -139,8 +127,7 @@ public class SwitchCase
 		// Within switch we can take default case at-most once.
 		// default case will be executed if and only if no case is matched.
 		// Within switch we can write default case anywhere but it is recommended to write as last case.
-		switch (x)
-		{
+		switch (x) {
 			default:
 				System.out.println("def");
 			case 0:

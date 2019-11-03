@@ -1,10 +1,8 @@
 package com.java.codeSnippets.variables;
 
-public class Snippet27
-{
+public class Snippet27 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		boolean value = TRUE;
 		System.out.println(value);
 
@@ -12,5 +10,7 @@ public class Snippet27
 
 }
 
-/** Reasoning **/
+/**
+ * Reasoning
+ **/
 // CE: TRUE cannot be resolved to a variable as it is invalid value for a boolean variable.

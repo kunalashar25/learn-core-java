@@ -4,14 +4,15 @@ import java.io.EOFException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class OverrridingAccessModifiers
-{
+public class OverrridingAccessModifiers {
 
 }
 
 // 1. In overriding the following modifiers won't keep any restrictions: synchronized, native, strictfp
 
-/** Valid Examples **/
+/**
+ * Valid Examples
+ **/
 // parent method: non-final > child method: final
 // parent method: abstract > child method: non-abstract
 // parent method: synchronized > child method: non-synchronized
@@ -23,16 +24,13 @@ public class OverrridingAccessModifiers
 
 // 2. While overriding we can't reduce scope of access modifier but we can increase the scope.
 
-class P1
-{
-	public void m1()
-	{
+class P1 {
+	public void m1() {
 
 	}
 }
 
-class C1 extends P1
-{
+class C1 extends P1 {
 	/*
 	 * void m1() { }
 	 */
@@ -51,81 +49,65 @@ class C1 extends P1
 // 3. If child class method throws any checked exception then parent class should throw same checked exception or its
 // parent exception other wise we'll get compile time error. There are no restrictions for unchecked exceptions.
 
-class P2
-{
-	public void m1() throws Exception
-	{
+class P2 {
+	public void m1() throws Exception {
 
 	}
 
-	public void m2()
-	{
+	public void m2() {
 
 	}
 
-	public void m3() throws Exception
-	{
+	public void m3() throws Exception {
 
 	}
 
-	public void m4() throws IOException
-	{
+	public void m4() throws IOException {
 
 	}
 
-	public void m5() throws IOException
-	{
+	public void m5() throws IOException {
 
 	}
 
-	public void m6() throws IOException
-	{
+	public void m6() throws IOException {
 
 	}
 
-	public void m7() throws IOException
-	{
+	public void m7() throws IOException {
 
 	}
 }
 
-class C2 extends P2
-{
+class C2 extends P2 {
 	/** Valid Examples **/
-	public void m1()
-	{
+	public void m1() {
 
 	}
 
-	public void m3() throws IOException
-	{
+	public void m3() throws IOException {
 
 	}
 
-	public void m5() throws FileNotFoundException, EOFException
-	{
+	public void m5() throws FileNotFoundException, EOFException {
 
 	}
 
-	public void m7() throws ArithmeticException, NullPointerException, ClassCastException
-	{
+	public void m7() throws ArithmeticException, NullPointerException, ClassCastException {
 
 	}
 
 	/** Inalid Examples **/
 
-	public void m2() throws Exception
-	{
+	public void m2() throws Exception {
 
 	}
 
-	public void m4() throws Exception
-	{
+	public void m4() throws Exception {
 
 	}
 
-	public void m6() throws EOFException, InterruptedException
-	{
+	public void m6() throws EOFException, InterruptedException {
 
 	}
 

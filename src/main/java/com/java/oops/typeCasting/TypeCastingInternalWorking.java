@@ -1,7 +1,6 @@
 package com.java.oops.typeCasting;
 
-public class TypeCastingInternalWorking
-{
+public class TypeCastingInternalWorking {
 	// Through type casting we're not creating any new object. For the existing object we're providing another type of
 	// reference variable i.e. we're performing type casting but not object casting.
 
@@ -14,8 +13,7 @@ public class TypeCastingInternalWorking
 	// B b = new C(); >> Equivalent to (B)c;
 	// A a = new C(); >> Equivalent to (A)((B)c);
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 
 		/** Example 1: Consider below Parent child class **/
 		Child c = new Child();
@@ -55,63 +53,50 @@ public class TypeCastingInternalWorking
 	}
 }
 
-class Parent
-{
-	public void m1()
-	{
+class Parent {
+	public void m1() {
 
 	}
 }
 
-class Child extends Parent
-{
-	public void m2()
-	{
+class Child extends Parent {
+	public void m2() {
 
 	}
 }
 
-class A
-{
+class A {
 	int x = 777;
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("A");
 	}
 
-	public static void m2()
-	{
+	public static void m2() {
 		System.out.println("A");
 	}
 }
 
-class B extends A
-{
+class B extends A {
 	int x = 888;
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("B");
 	}
 
-	public static void m2()
-	{
+	public static void m2() {
 		System.out.println("B");
 	}
 }
 
-class C extends B
-{
+class C extends B {
 	int x = 999;
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("C");
 	}
 
-	public static void m2()
-	{
+	public static void m2() {
 		System.out.println("C");
 	}
 }

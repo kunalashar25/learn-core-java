@@ -1,7 +1,6 @@
 package com.java.interfaces;
 
-public interface MarkerInterface extends Cloneable
-{
+public interface MarkerInterface extends Cloneable {
 	// If an interface doesn't contain any methods and by implementing that interface if our objects will get some
 	// ability then such types of interfaces are called Marker Interfaces or Ability Interface or Tag Interface.
 
